@@ -51,6 +51,7 @@ const getStories = () => {
         './.storybook/stories/Card/Card.stories.tsx': require('./stories/Card/Card.stories.tsx'),
         './.storybook/stories/Notification/Notification.stories.tsx': require('./stories/Notification/Notification.stories.tsx'),
         './.storybook/stories/FormInputFile/FormInputFile.stories.tsx': require('./stories/FormInputFile/FormInputFile.stories.tsx'),
+        './.storybook/stories/Backdrop/Backdrop.stories.tsx': require('./stories/Backdrop/Backdrop.stories.tsx'),
     };
 };
 
