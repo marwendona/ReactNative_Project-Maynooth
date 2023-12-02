@@ -1,11 +1,3 @@
-export const breakpoints = {
-  xs: 0,
-  sm: 576,
-  md: 768,
-  lg: 992,
-  xl: 1200,
-}
-
 export default {
   colors: {
     white: '#ffffff',
@@ -28,6 +20,6 @@ export default {
     red20: '#fce2e5',
     red100: '#e50d24',
     blackOpacity30: '#000000',
-    blackOpacity100: '#000000',
-  },
-};
+    blackOpacity100: '#000000'
+  }
+}
