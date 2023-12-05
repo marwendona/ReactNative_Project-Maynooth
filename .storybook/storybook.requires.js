@@ -53,6 +53,7 @@ const getStories = () => {
         './.storybook/stories/FormInputFile/FormInputFile.stories.tsx': require('./stories/FormInputFile/FormInputFile.stories.tsx'),
         './.storybook/stories/Backdrop/Backdrop.stories.tsx': require('./stories/Backdrop/Backdrop.stories.tsx'),
         './.storybook/stories/FormCheckbox/FormCheckbox.stories.tsx': require('./stories/FormCheckbox/FormCheckbox.stories.tsx'),
+        './.storybook/stories/ListListItem/ListListItem.stories.tsx': require('./stories/ListListItem/ListListItem.stories.tsx'),
     };
 };
 
