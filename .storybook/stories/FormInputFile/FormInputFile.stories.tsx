@@ -1,7 +1,7 @@
 import {View, Text} from 'react-native';
 import {Story, type Meta} from '@storybook/react-native';
 import FormInputFile from "../../../components/FormInputFile";
-import IconsOutlineAddPhotoAlternate from "../../../components/IconsOutlineAddPhotoAlternate";
+import Icon from "../../../components/Icon";
 
 const meta: Meta<typeof FormInputFile> = {
     title: 'FormInputFile',
@@ -17,13 +17,13 @@ const meta: Meta<typeof FormInputFile> = {
     ],
     args: {
         label: 'Label',
-        icon: <IconsOutlineAddPhotoAlternate/>,
+        icon: <Icon iconName={'add_photo_alternate'}/>,
     },
 };
 
 export const InputFile = {
     label: 'Label',
-    icon: <IconsOutlineAddPhotoAlternate/>,
+    icon: <Icon iconName={'add_photo_alternate'}/>,
 };
 
 export default meta;

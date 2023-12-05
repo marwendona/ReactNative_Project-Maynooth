@@ -2,7 +2,6 @@ import {View, StyleSheet} from "react-native";
 import React from "react";
 import BaseInputField from "./BaseInputField";
 import BaseLabel, {BaseInputLabelColor} from "./BaseLabel";
-import Icon from "./Icon";
 
 export interface FormInputGroupProps {
     labelPrimary?: string
@@ -23,7 +22,7 @@ const FormInputGroup: React.FC<FormInputGroupProps> = ({ labelPrimary, labelRigh
                 labelSecondary={labelSecondary}
                 iconLeft="info"
                 iconRight="help"
-                color="Dark"
+                color={BaseInputLabelColor.Dark}
             />
             <BaseInputField value={value}/>
         </View>

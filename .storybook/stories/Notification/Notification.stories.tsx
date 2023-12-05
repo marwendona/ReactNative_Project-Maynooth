@@ -1,7 +1,7 @@
 import {View, Text} from 'react-native';
 import Notification from '../../../components/Notification'
 import {Story, type Meta} from '@storybook/react-native';
-import IconsOutlineInfo from "../../../components/IconsOutlineInfo";
+import Icon from "../../../components/Icon";
 
 const meta: Meta<typeof Notification> = {
     title: 'Notification',
@@ -16,7 +16,7 @@ const meta: Meta<typeof Notification> = {
         ),
     ],
     args: {
-        icon: <IconsOutlineInfo/>,
+        icon: <Icon iconName={"info"} />,
         label: 'Type',
         date: '01-12-2023 17:00',
         title: 'Title',
@@ -25,7 +25,7 @@ const meta: Meta<typeof Notification> = {
 };
 
 export const Notif = {
-    icon: <IconsOutlineInfo/>,
+    icon: <Icon iconName={"info"} />,
     label: 'Type',
     date: '01-12-2023 17:00',
     title: 'Title',
