@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
-import IconsFilledStar from './IconsFilledStar'
+import Icon from './Icon'
+import theme from './theme'
 
 interface RatingProductProps {
   text: string
@@ -10,7 +11,7 @@ const RatingProduct: React.FC<RatingProductProps> = ({ text, size }) => {
   const styles = size === 'Medium' ? stylesMedium : stylesSmall
 
   return (<View style={styles.ratingProduct}>
-                  <IconsFilledStar size={size}></IconsFilledStar>
+                  <Icon iconName={'star_filled'} size={size} color={theme.colors.yellow100}/>
                   <Text style={styles.label}>
                         {text}
                   </Text>

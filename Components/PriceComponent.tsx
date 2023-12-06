@@ -5,22 +5,24 @@ import { Badge, BadgeSize, BadgeType } from './Badge'
 
 interface PriceProps {
   size?: 'Small' | 'Medium'
-  price?: string
+  initialPrice: string
+  discount: string
+  newPrice: string
   achatProduit?: () => void
 }
 
-const PriceComponent: React.FC<PriceProps> = ({ size, price }) => {
+const PriceComponent: React.FC<PriceProps> = ({ size = 'Small', initialPrice, newPrice, discount }) => {
   const styleSize = 'bodySmall'
   return (
     <View style={styles.price}>
                               <Text style={themeGlobal.themeGlobalText[styleSize]}>
-                                    {'Rp 500.000'}
+                                    {newPrice}
                               </Text>
                               <View style={styles.initialpricewrapper}>
                                     <Text style={styles.initialprice}>
-                                          {price}
+                                          {initialPrice}
                                     </Text>
-                                    <Badge type={BadgeType.Pill} size={BadgeSize.Small} text={'50%'} ></Badge>
+                                <Badge type={BadgeType.Pill} size={BadgeSize.Small} text={discount}></Badge>
                               </View>
                         </View>
   )
