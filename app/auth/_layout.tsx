@@ -5,12 +5,9 @@ import { Slot } from 'expo-router'
 const _layout = () => {
   return (
     <View>
-      <Text>_layout</Text>
       <Slot></Slot>
     </View>
   )
 }
 
 export default _layout
-
-const styles = StyleSheet.create({})

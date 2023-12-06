@@ -1,12 +1,12 @@
-import { Button, StyleSheet, Text, View } from 'react-native'
+import { Button, Text, View } from 'react-native'
 import React, { useState } from 'react'
-import Welcome from '../components/Welcome'
+import Welcome from '../Components/Welcome'
 import { Link } from 'expo-router'
 import { useDispatch, useSelector } from 'react-redux'
 
 const Index = () => {
-  const count = useSelector(state => state.counter.count);
-  const dispatch = useDispatch();
+  const count = useSelector(state => state.counter.count)
+  const dispatch = useDispatch()
 
   const [users] = useState([{
     name: 'test'
@@ -35,4 +35,3 @@ const Index = () => {
 
 export default Index
 
-const styles = StyleSheet.create({})

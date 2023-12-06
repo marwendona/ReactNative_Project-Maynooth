@@ -5,10 +5,10 @@ import store from '../store'
 import { service } from '../service'
 
 const Layout = () => {
-  useEffect(async () => {
-    const data = await service.products.productsList()
-    console.log(data)
-  }, [])
+  // useEffect(async () => {
+  //   const data = await service.products.productsList()
+  //   console.log(data)
+  // }, [])
   return (
     <Provider store={store}>
       <Tabs></Tabs>
