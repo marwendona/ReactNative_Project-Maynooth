@@ -48,13 +48,19 @@ try {
 
 const getStories = () => {
     return {
-        './.storybook/stories/Card/Card.stories.tsx': require('./stories/Card/Card.stories.tsx'),
-        './.storybook/stories/Notification/Notification.stories.tsx': require('./stories/Notification/Notification.stories.tsx'),
-        './.storybook/stories/FormInputFile/FormInputFile.stories.tsx': require('./stories/FormInputFile/FormInputFile.stories.tsx'),
-        './.storybook/stories/Backdrop/Backdrop.stories.tsx': require('./stories/Backdrop/Backdrop.stories.tsx'),
-        './.storybook/stories/FormInputGroup/FormInputGroup.stories.tsx': require('./stories/FormInputGroup/FormInputGroup.stories.tsx'),
-        './.storybook/stories/FormCheckbox/FormCheckbox.stories.tsx': require('./stories/FormCheckbox/FormCheckbox.stories.tsx'),
-        './.storybook/stories/ListListItem/ListListItem.stories.tsx': require('./stories/ListListItem/ListListItem.stories.tsx'),
+         './.storybook/stories/Card2/Card2.stories.tsx': require('./stories/Card2/Card2.stories.tsx'),
+        // './.storybook/stories/InputField/InputField.stories.tsx': require('./stories/InputField/InputField.stories.tsx'),
+         './.storybook/stories/LogoMark/LogoMark.stories.tsx': require('./stories/LogoMark/LogoMark.stories.tsx'),
+        // './.storybook/stories/Pagination/Pagination.stories.tsx': require('./stories/Pagination/Pagination.stories.tsx'),
+        // './.storybook/stories/Notification/Notification.stories.tsx': require('./stories/Notification/Notification.stories.tsx'),
+        // './.storybook/stories/Step/Step.stories.tsx': require('./stories/Step/Step.stories.tsx'),
+        // './.storybook/stories/Card/Card.stories.tsx': require('./stories/Card/Card.stories.tsx'),
+        // './.storybook/stories/ButtonRegular/ButtonRegular.stories.tsx': require('./stories/ButtonRegular/ButtonRegular.stories.tsx'),
+        // './.storybook/stories/FormInputFile/FormInputFile.stories.tsx': require('./stories/FormInputFile/FormInputFile.stories.tsx'),
+        // './.storybook/stories/Backdrop/Backdrop.stories.tsx': require('./stories/Backdrop/Backdrop.stories.tsx'),
+        // './.storybook/stories/FormInputGroup/FormInputGroup.stories.tsx': require('./stories/FormInputGroup/FormInputGroup.stories.tsx'),
+        // './.storybook/stories/FormCheckbox/FormCheckbox.stories.tsx': require('./stories/FormCheckbox/FormCheckbox.stories.tsx'),
+        // './.storybook/stories/ListListItem/ListListItem.stories.tsx': require('./stories/ListListItem/ListListItem.stories.tsx'),
     };
 };
 
