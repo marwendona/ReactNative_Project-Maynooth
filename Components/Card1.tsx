@@ -1,23 +1,33 @@
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import PriceComponent from './PriceComponent'
 import { themeGlobal } from '../styles/themeGlobal'
 import RatingProduct from './RatingProduct'
 import { Thumbnail } from './Thumbnail'
 import CardBody from './CardBody'
-import BtnRegular from './BtnRegular'
-import IconsOutlineFavorite from './IconsOutlineFavorite'
+import ButtonRegular, { ButtonRegularColor, ButtonRegularSize, ButtonRegularType } from './ButtonRegular'
 
 interface CardProps {
   title: string
   subtitle: string
   type: 'Product' | 'Collection' | 'Variation'
-  price?: string
+  initialPrice: string
+  discount: string
+  newPrice: string
   size?: 'Small' | 'Medium'
   orientation?: 'Vertical' | 'Horizontal'
 }
 
-export const Card1: React.FC<CardProps> = ({ title, price, size, orientation, type, subtitle }) => {
+export const Card1: React.FC<CardProps> = ({
+  title,
+  size,
+  orientation,
+  type,
+  subtitle,
+  initialPrice = '',
+  discount = '',
+  newPrice = ''
+}) => {
   let styles
   if (type === 'Product') {
     if (orientation === 'Horizontal') {
@@ -32,7 +42,8 @@ export const Card1: React.FC<CardProps> = ({ title, price, size, orientation, ty
   return (
     <View style={styles.card}>
       <View>
-      {orientation === 'Vertical' && <BtnRegular iconLeft={<IconsOutlineFavorite/>} ></BtnRegular>}
+      {orientation === 'Vertical' && type === 'Product' &&
+         <View style ={{ position: 'absolute', top: 3, right: 3, zIndex: 1 }}> <ButtonRegular iconLeft={'favorite'} size={ButtonRegularSize.Small} type={ButtonRegularType.FilledCircle} color={ButtonRegularColor.Light}></ButtonRegular></View>}
       {type !== 'Collection'
         ? <Image style={styles.image} source={require('../assets/exemple_image.png')} />
         : <Thumbnail image={require('../assets/exemple_image.png')} type='1 Image'></Thumbnail>
@@ -44,8 +55,8 @@ export const Card1: React.FC<CardProps> = ({ title, price, size, orientation, ty
             <Text style={themeGlobal.themeGlobalText.h6}>
               {title}
             </Text>
-            <PriceComponent size={size} price={price}></PriceComponent>
-            <RatingProduct size='Small' text='5.0'></RatingProduct>
+            <PriceComponent size={size} initialPrice={initialPrice} newPrice={newPrice} discount={discount} ></PriceComponent>
+              {type === 'Product' && orientation === 'Vertical' && <RatingProduct size='Small' text='5.0'></RatingProduct> }
           </View>
           : <View><CardBody text={subtitle} title={title}></CardBody></View>}
 

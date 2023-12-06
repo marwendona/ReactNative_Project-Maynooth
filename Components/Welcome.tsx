@@ -27,4 +27,3 @@ const Welcome: React.FC<WelcomeProps> = ({ name }) => {
 
 export default Welcome
 
-const styles = StyleSheet.create({})

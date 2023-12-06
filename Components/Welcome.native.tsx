@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Text, View } from 'react-native'
 import React from 'react'
 
 const Welcome = () => {
@@ -10,5 +10,3 @@ const Welcome = () => {
 }
 
 export default Welcome
-
-const styles = StyleSheet.create({})
