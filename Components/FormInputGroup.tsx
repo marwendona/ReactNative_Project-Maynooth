@@ -1,30 +1,25 @@
-import {View, StyleSheet} from "react-native";
+import {StyleSheet, View} from "react-native";
 import React from "react";
-import BaseInputField from "./BaseInputField";
 import BaseLabel, {BaseInputLabelColor} from "./BaseLabel";
+import InputField, {BaseInputFieldSize, BaseInputFieldState} from "./InputField";
 
 export interface FormInputGroupProps {
-    labelPrimary?: string
+    labelPrimary: string
     labelRight?: string
     labelSecondary?: string
     value?: string;
-    iconLeft: JSX.Element;
-    iconRight: JSX.Element;
+    iconLeftLabel: string;
+    iconRightLabel: string;
+    iconLeftField: string;
+    iconRightField: string;
     color: BaseInputLabelColor;
 }
 
-const FormInputGroup: React.FC<FormInputGroupProps> = ({ labelPrimary, labelRight, labelSecondary, value }) => {
+const FormInputGroup: React.FC<FormInputGroupProps> = ({ labelPrimary, iconRightLabel, labelSecondary,iconLeftField, iconRightField, value, iconLeftLabel, iconRight, color }) => {
     return (
         <View style={styles.formInputgroup}>
-            <BaseLabel
-                labelPrimary={labelPrimary}
-                labelRight={labelRight}
-                labelSecondary={labelSecondary}
-                iconLeft="info"
-                iconRight="help"
-                color={BaseInputLabelColor.Dark}
-            />
-            <BaseInputField value={value}/>
+            <BaseLabel labelPrimary={labelPrimary} iconLeft={iconLeftLabel} color={color} iconRight={iconRight} labelSecondary={labelSecondary} labelRight={iconRightLabel}/>
+            <InputField size={BaseInputFieldSize.Medium} state={BaseInputFieldState.Default} iconLeft={iconLeftField} iconRight={iconRightField}/>
         </View>
     )
 }

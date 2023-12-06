@@ -1,14 +1,15 @@
 import {View, Text, StyleSheet} from 'react-native';
+import Icon from "./Icon";
+import React from "react";
 export interface FormInputFileProps {
     label: string;
-    icon: JSX.Element;
 }
 
-const FormInputFile = ({label, icon}: FormInputFileProps) => {
+const FormInputFile: React.FC<FormInputFileProps> = ({label}) => {
     return (
         <View style={styles.formInputfile}>
             <View style={styles.icon}>
-                {icon}
+                <Icon iconName={'add_photo_alternate'} size={'Small'} />
             </View>
             <Text style={styles.text}>
                 {label}
