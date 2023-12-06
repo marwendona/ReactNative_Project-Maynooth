@@ -1,8 +1,9 @@
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 import theme from './theme'
+import {Circle, Svg} from "react-native-svg";
 export interface BadgeProps {
-  text: string
+  text?: string
   type: BadgeType
   size: BadgeSize
 }
@@ -21,9 +22,13 @@ export enum BadgeSize {
 export const Badge: React.FC<BadgeProps> = ({ text, type, size }) => {
   let styles
   if (type === BadgeType.Dot) {
+    console.log("fffffffffff")
     styles = size === BadgeSize.Small ? stylesSmallDot : stylesMediumDot
     return (
       <View style={styles.root}>
+          <Svg width="6" height="6" viewBox="0 0 6 6" fill="none" >
+            <Circle cx="3" cy="3" r="3" fill="#E50D24"/>
+          </Svg>
         </View>
     )
   } else if (type === BadgeType.Pill) {
@@ -32,7 +37,7 @@ export const Badge: React.FC<BadgeProps> = ({ text, type, size }) => {
 
   return (
       <View style={styles.root}>
-          {type !== BadgeType.Dot && <Text style={styles.label}>
+          { <Text style={styles.label}>
             {text}
           </Text>}
         </View>

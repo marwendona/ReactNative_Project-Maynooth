@@ -6,7 +6,7 @@ export interface BaseInputLabelProps {
   labelPrimary: string
   labelRight?: string
   labelSecondary?: string
-  iconLeft: string
+  iconLeft?: string
   iconRight?: string
   color: BaseInputLabelColor
 }
@@ -29,7 +29,7 @@ const BaseLabel: React.FC<BaseInputLabelProps> = ({ labelPrimary, labelRight, la
   return (
     <View style={styles.baseInputlabel}>
       <View style={styles.left}>
-        <Icon iconName={iconLeft} size='Small' color={iconColor[color]} />
+        {iconLeft&&<Icon iconName={iconLeft} size='Small' color={iconColor[color]}/>}
         <Text style={[styles.label, { color: iconColor[color] }]}>
           {labelPrimary}
         </Text>
@@ -37,12 +37,13 @@ const BaseLabel: React.FC<BaseInputLabelProps> = ({ labelPrimary, labelRight, la
           {labelSecondary}
         </Text>
       </View>
-      {iconRight !== undefined &&
+      {labelRight&&
       <View style={styles.right}>
         <Text style={[styles.labelright, { color: iconColor[color] }]}>
           {labelRight}
         </Text>
-         <Icon iconName={iconRight} size='Small' color={iconColor[color]} />
+        {iconRight !== undefined &&
+         <Icon iconName={iconRight} size='Small' color={iconColor[color]} />}
       </View>}
     </View>
   )
