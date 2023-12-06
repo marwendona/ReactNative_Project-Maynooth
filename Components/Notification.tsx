@@ -1,23 +1,26 @@
 import {StyleSheet, View} from 'react-native'
 import React from 'react'
-import BaseInputLabel, {BaseInputLabelColor} from "./BaseInputLabel";
+import BaseLabel, {BaseInputLabelColor} from "./BaseLabel";
+import Icon from "./Icon";
+import theme from "./theme";
+
 
 export interface NotificationProps {
     subtitle?: string
     title?: string
-    label?: string
+    label: string
     date?: string
-    icon?: JSX.Element
+    icon: string
 }
 
 const Notification = ({subtitle, title, label, date, icon}: NotificationProps) => {
     return (
         <View style={styles.notification}>
             <View style={styles.icon}>
-                {icon}
+                <Icon iconName={icon} size='Large' color={theme.colors.gray100} />
             </View>
             <View style={styles.text}>
-                <BaseInputLabel
+                <BaseLabel
                     labelPrimary={label}
                     labelRight={date}
                     color={BaseInputLabelColor.Grey}
