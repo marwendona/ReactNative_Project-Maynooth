@@ -1,6 +1,6 @@
 // Button.stories.ts|tsx
 import { View } from 'react-native';
-import Card1 from '../../../components/Card1'
+import Card1 from '../../../Components/Card1'
 import type { Meta } from '@storybook/react-native';
 
 
@@ -35,14 +35,19 @@ const meta: Meta<typeof Card1> = {
     title: 'Hello world test 2',
     orientation: 'Vertical',
     type: 'Product',
-    price : '500.000'
+    subtitle: 'Card subtitle',
+    initialPrice : '500.000',
+    discount : '10%',
+    newPrice : '450.000',
   }
 };
 
 
 export const ProductHorizontalSmall = {
   args: {
-    price: '500.000',
+    initialPrice : '500.000',
+    discount : '10%',
+    newPrice : '450.000',
     subtitle: 'Card subtitle',
     title: 'Titre1',
     type: 'Product',
@@ -53,7 +58,9 @@ export const ProductHorizontalSmall = {
 
 export const ProductHorizontalMedium = {
   args: {
-    price: '500.000',
+    initialPrice : '500.000',
+    discount : '10%',
+    newPrice : '450.000',
     subtitle: 'Card subtitle',
     title: 'Titre2',
     type: 'Product',
@@ -64,7 +71,9 @@ export const ProductHorizontalMedium = {
 
 export const ProductVertical = {
   args: {
-    price: '500.000',
+    initialPrice : '500.000',
+    discount : '10%',
+    newPrice : '450.000',
     subtitle: 'Card subtitle',
     title: 'Titre3',
     type: 'Product',

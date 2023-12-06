@@ -1,10 +1,10 @@
 import {View, Text} from 'react-native';
 import {Story, type Meta} from '@storybook/react-native';
-import ListListItem, {ListListItemProps} from "../../../components/ListListItem";
+import List, {ListProps} from "../../../Components/List";
 
-const meta: Meta<typeof ListListItem> = {
+const meta: Meta<typeof List> = {
     title: 'ListListItem',
-    component: ListListItem,
+    component: List,
 
     decorators: [
         (Story) => (
@@ -27,7 +27,7 @@ const meta: Meta<typeof ListListItem> = {
     },
 };
 
-export const ListItem = (args: ListListItemProps) => <ListListItem {...args} />;
+export const ListItem = (args: ListProps) => <List {...args} />;
 ListItem.args = {
     title: 'Title',
     subtitle: 'Subtitle',
