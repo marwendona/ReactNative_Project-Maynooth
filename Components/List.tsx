@@ -3,14 +3,13 @@ import React from 'react'
 import Icon from "./Icon";
 import {Badge} from "./Badge";
 
-export interface ListListItemProps {
+export interface ListProps {
     subtitle?: string;
     title?: string;
-    text?: string;
     state?: 'Default' | 'Hover' | 'Active';
 }
 
-const ListListItem = ({subtitle, title, text, state = 'Default'}: ListListItemProps) => {
+const List = ({subtitle, title, state = 'Default'}: ListProps) => {
     const getStateStyles = () => {
         switch (state) {
             case 'Hover':
@@ -40,7 +39,7 @@ const ListListItem = ({subtitle, title, text, state = 'Default'}: ListListItemPr
     );
 };
 
-export default ListListItem
+export default List
 
 const styles = StyleSheet.create({
     // Common styles
