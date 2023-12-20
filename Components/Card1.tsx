@@ -16,20 +16,12 @@ export interface CardProps {
   newPrice: string
   size?: 'Small' | 'Medium'
   orientation?: 'Vertical' | 'Horizontal'
-  image?: string
+  image?: string,
+  rating?: string
 }
 
-export const Card1: React.FC<CardProps> = ({
-  title,
-  size,
-  orientation,
-  type,
-  subtitle,
-  initialPrice = '',
-  discount = '',
-  newPrice = '',
-  image = ''
-}) => {
+export const Card1: React.FC<CardProps> = ({ title, size, orientation, type, subtitle,
+                                             initialPrice = '', discount = '', newPrice = '',image = '', rating = ''}) => {
   let styles
   if (type === 'Product') {
     if (orientation === 'Horizontal') {
@@ -42,28 +34,28 @@ export const Card1: React.FC<CardProps> = ({
   }
 
   return (
-    <View style={styles.card}>
-      <View>
-      {orientation === 'Vertical' && type === 'Product' &&
-         <View style ={{ position: 'absolute', top: 3, right: 3, zIndex: 1 }}> <ButtonRegular iconLeft={'favorite'} size={ButtonRegularSize.Small} type={ButtonRegularType.FilledCircle} color={ButtonRegularColor.Light}></ButtonRegular></View>}
-      {type !== 'Collection'
-        ? <Image style={styles.image} source={{ uri: image }} />
-        : <Thumbnail image={image} type='1 Image'></Thumbnail>
-      }
-      </View>
-      <View style={styles.cardbody}>
-        {type === 'Product'
-          ? <View>
-            <Text style={themeGlobal.themeGlobalText.h6}>
-              {title}
-            </Text>
-            <PriceComponent size={size} initialPrice={initialPrice} newPrice={newPrice} discount={discount} ></PriceComponent>
-              {type === 'Product' && orientation === 'Vertical' && <RatingProduct size='Small' text='5.0'></RatingProduct> }
-          </View>
-          : <View><CardBody text={subtitle} title={title}></CardBody></View>}
+      <View style={styles.card}>
+        <View>
+          {orientation === 'Vertical' && type === 'Product' &&
+              <View style={{ position: 'absolute', top: 3, right: 3, zIndex: 1 }}> <ButtonRegular iconLeft={'favorite'} size={ButtonRegularSize.Small} type={ButtonRegularType.FilledCircle} color={ButtonRegularColor.Light}></ButtonRegular></View>}
+          {type !== 'Collection'
+              ? <Image style={styles.image} source={{ uri: image }} />
+              : <Thumbnail image={image} type='1 Image'></Thumbnail>
+          }
+        </View>
+        <View style={styles.cardbody}>
+          {type === 'Product'
+              ? <View>
+                <Text style={themeGlobal.themeGlobalText.h6}>
+                  {title}
+                </Text>
+                <PriceComponent size={size} initialPrice={initialPrice} newPrice={newPrice} discount={discount} ></PriceComponent>
+                {type === 'Product' && orientation === 'Vertical' && <RatingProduct size='Small' text={rating}></RatingProduct>}
+              </View>
+              : <View><CardBody text={subtitle} title={title}></CardBody></View>}
 
+        </View>
       </View>
-    </View>
   )
 }
 export default Card1
