@@ -3,7 +3,6 @@ import { Slot, Tabs, router } from 'expo-router'
 import { Provider } from 'react-redux'
 import store from '../store'
 import { service } from '../service'
-import Card1 from '../components/Card1'
 import { Text } from 'react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { useFonts } from 'expo-font'
@@ -48,6 +47,12 @@ const Layout = () => {
     }
   }, [isLoading])
 
+  // useEffect(() => {
+  //   if (!isLoading) {
+  //     router.push('splashScreen')
+  //   }
+  // }, [isLoading])
+
   /* useEffect(() => {
     const fetchData = async () => {
       try {
@@ -65,10 +70,10 @@ const Layout = () => {
 
   if (isLoading) { return <Text>is Loading ...</Text> } else {
     return (
-      <Provider store={store}>
-        <Slot></Slot>
+        <Provider store={store}>
+          <Slot></Slot>
 
-      </Provider>
+        </Provider>
     )
   }
 }
