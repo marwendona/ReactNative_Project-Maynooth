@@ -3,7 +3,6 @@ import { Slot, Tabs, router } from 'expo-router';
 import { Provider } from 'react-redux';
 import store from '../store';
 import { service } from '../service';
-import Card1 from '../components/Card1';
 import {Text} from 'react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
