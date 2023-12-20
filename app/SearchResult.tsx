@@ -1,32 +1,47 @@
 import React from 'react';
-import { View, Text, ImageBackground, StyleSheet } from 'react-native';
-import { Svg, Path } from 'react-native-svg';
+import { View, Text, StyleSheet, Animated } from 'react-native';
 import Icon from '../Components/Icon';
 import Card1 from '../Components/Card1';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function SearchResult() {
+    const scaleValue = new Animated.Value(1);
+
+    const handleIconPress = () => {
+        // Animation logic
+        Animated.sequence([
+            Animated.timing(scaleValue, { toValue: 1.2, duration: 100, useNativeDriver: true }),
+            Animated.timing(scaleValue, { toValue: 1, duration: 100, useNativeDriver: true }),
+        ]).start();
+    };
     return (
         <View style={styles.searchResult}>
             <View style={styles.tabssort}>
                 <View style={styles.relevance}>
                     <View style={styles.textwrapper}>
-                        <Text style={styles.text}>
-                            {`Relevance`}
-                        </Text>
+                        <TouchableOpacity onPress={handleIconPress}>
+                            <Text style={styles.text}>
+                                {`Relevance`}
+                            </Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
                 <View style={styles.latest}>
                     <View style={styles._textwrapper}>
-                        <Text style={styles._text}>
-                            {`Latest`}
-                        </Text>
+                        <TouchableOpacity onPress={handleIconPress}>
+                            <Text style={styles._text}>
+                                {`Latest`}
+                            </Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
                 <View style={styles.topsales}>
                     <View style={styles.__textwrapper}>
-                        <Text style={styles.__text}>
-                            {`Top sales`}
-                        </Text>
+                        <TouchableOpacity onPress={handleIconPress}>
+                            <Text style={styles.__text}>
+                                {`Top sales`}
+                            </Text>
+                        </TouchableOpacity>
                     </View>
                 </View>
                 <View style={styles.price}>
@@ -46,20 +61,20 @@ export default function SearchResult() {
                 </View>
                 <View style={styles.items}>
                     <View style={styles.col}>
-                        <Card1 title='Single   Drawer  Beds' initialPrice='Rp 800.000' newPrice='Rp 600.000' discount='25%' type='Product'
-                            orientation='Vertical' > </Card1>
-                        <Card1 title='Wooden   Side   Table' initialPrice='Rp 1.500.000' newPrice='Rp 2.000.000' discount='25%' type='Product'
-                            orientation='Vertical'  > </Card1>
-                        <Card1 title='Solid Wood Coffee Table' initialPrice='Rp 2.550.000' newPrice='Rp 3.000.000' discount='15%' type='Product'
-                            orientation='Vertical'  > </Card1>
+                        <Card1 size='Small' image='assets/SingleDrawer.jpg' title='Single Drawer Beds' initialPrice='Rp 800.000' newPrice='Rp 600.000' discount='25%' type='Product'
+                               orientation='Vertical' > </Card1>
+                        <Card1 rating='5.0' size='Small' image='assets/exemple_image.png' title='Wooden Side Table' initialPrice='Rp 1.500.000' newPrice='Rp 2.000.000' discount='25%' type='Product'
+                               orientation='Vertical'  > </Card1>
+                        <Card1 size='Small' image='assets/solidWood.jpg' title='Solid Wood Coffe..' initialPrice='Rp 2.550.000' newPrice='Rp 3.000.000' discount='15%' type='Product'
+                               orientation='Vertical'  > </Card1>
                     </View>
                     <View style={styles._col}>
-                        <Card1 title='Double  Drawer  Bed' initialPrice='Rp 1.500.000' newPrice='Rp 900.000' discount='40%' type='Product'
-                            orientation='Vertical'  > </Card1>
-                        <Card1 title='Wooden Coffee Table' initialPrice='Rp 1.400.000' newPrice='Rp 2.000.000' discount='30%' type='Product'
-                            orientation='Vertical'  > </Card1>
-                        <Card1 title='Long Dining Table' initialPrice='Rp 2.800.000' newPrice='Rp 4.000.000' discount='30%' type='Product'
-                            orientation='Vertical'  > </Card1>
+                        <Card1 rating='5.0' size='Small' image='assets/DoubleDrawer.jpg' title='Double Drawer Bed' initialPrice='Rp 1.500.000' newPrice='Rp 900.000' discount='40%' type='Product'
+                               orientation='Vertical'  > </Card1>
+                        <Card1 rating='4.8' size='Small' image='assets/woodenCoffe.jpg' title='Wooden Coffee T..' initialPrice='Rp 1.400.000' newPrice='Rp 2.000.000' discount='30%' type='Product'
+                               orientation='Vertical'  > </Card1>
+                        <Card1 size='Small' image='assets/LongTable.jpg' title='Long Dining Table' initialPrice='Rp 2.800.000' newPrice='Rp 4.000.000' discount='30%' type='Product'
+                               orientation='Vertical'  > </Card1>
                     </View>
                 </View>
             </View>
@@ -70,7 +85,7 @@ export default function SearchResult() {
 const styles = StyleSheet.create({
     searchResult: {
         flexShrink: 0,
-        width: 360,
+        width: 380,
         paddingTop: 50,
         paddingBottom: 24,
         backgroundColor: "rgba(255, 255, 255, 1)",
