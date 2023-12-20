@@ -1,12 +1,22 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Animated } from 'react-native';
 import { Svg, Path, Circle } from 'react-native-svg';
 import Icon from '../Components/Icon';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export default function SearchList() {
+    const scaleValue = new Animated.Value(1);
+
+    const handleIconPress = () => {
+        // Animation logic
+        Animated.sequence([
+            Animated.timing(scaleValue, { toValue: 1.2, duration: 100, useNativeDriver: true }),
+            Animated.timing(scaleValue, { toValue: 1, duration: 100, useNativeDriver: true }),
+        ]).start();
+    };
+
     return (
         <View style={styles.searchList}>
-
             <View style={styles.searchlist}>
                 <View style={styles.item}>
                     <View style={styles.text}>
@@ -14,9 +24,11 @@ export default function SearchList() {
                             {`Table`}
                         </Text>
                     </View>
-                    <View style={styles.itemright}>
-                        <Icon iconName={'chevron_right'} size={'Small'} />
-                    </View>
+                    <TouchableOpacity onPress={handleIconPress}>
+                        <View style={styles.itemright}>
+                            <Icon iconName={'chevron_right'} size={'Small'} />
+                        </View>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles._item}>
                     <View style={styles._text}>
@@ -24,11 +36,11 @@ export default function SearchList() {
                             {`Table lamp`}
                         </Text>
                     </View>
-                    <View style={styles._itemright}>
+                    <TouchableOpacity onPress={handleIconPress}>
                         <View style={styles.itemright}>
                             <Icon iconName={'chevron_right'} size={'Small'} />
                         </View>
-                    </View>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.__item}>
                     <View style={styles.__text}>
@@ -36,11 +48,11 @@ export default function SearchList() {
                             {`Coffee table`}
                         </Text>
                     </View>
-                    <View style={styles.__itemright}>
+                    <TouchableOpacity onPress={handleIconPress}>
                         <View style={styles.itemright}>
                             <Icon iconName={'chevron_right'} size={'Small'} />
                         </View>
-                    </View>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.___item}>
                     <View style={styles.___text}>
@@ -48,11 +60,11 @@ export default function SearchList() {
                             {`Dining table`}
                         </Text>
                     </View>
-                    <View style={styles.___itemright}>
-                    <View style={styles.itemright}>
-                        <Icon iconName={'chevron_right'} size={'Small'} />
-                    </View>
-                    </View>
+                    <TouchableOpacity onPress={handleIconPress}>
+                        <View style={styles.itemright}>
+                            <Icon iconName={'chevron_right'} size={'Small'} />
+                        </View>
+                    </TouchableOpacity>
                 </View>
                 <View style={styles.____item}>
                     <View style={styles.____text}>
@@ -60,14 +72,13 @@ export default function SearchList() {
                             {`Side table`}
                         </Text>
                     </View>
-                    <View style={styles.____itemright}>
-                    <View style={styles.itemright}>
-                        <Icon iconName={'chevron_right'} size={'Small'} />
-                    </View>
-                    </View>
+                    <TouchableOpacity onPress={handleIconPress}>
+                        <View style={styles.itemright}>
+                            <Icon iconName={'chevron_right'} size={'Small'} />
+                        </View>
+                    </TouchableOpacity>
                 </View>
             </View>
-            
         </View>
     )
 }
