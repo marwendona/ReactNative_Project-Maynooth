@@ -1,5 +1,5 @@
 import React, { type ReactNode } from 'react'
-import { View } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import { Svg, Path } from 'react-native-svg'
 
 export interface IconProps {
@@ -13,14 +13,14 @@ export const Icon: React.FC<IconProps> = ({ iconName, color = '#09111F', size = 
   const icon = icons(iconSize, color)[iconName]
   return (
     <View style={{ width: size, height: size }}>
-  {icon}
+      {icon}
     </View>
   )
 }
 const icons: IconsType = (size: string, iconColor: string) => {
   return {
     add_photo_alternate: (
-      <Svg style={{ width: size, height: size }} width= {size} height= {size} viewBox="0 0 18 18" fill={iconColor} >
+      <Svg style={{ width: size, height: size }} width={size} height={size} viewBox="0 0 18 18" fill={iconColor} >
         <Path d="M2 18C1.45 18 0.979167 17.8042 0.5875 17.4125C0.195833 17.0208 0 16.55 0 16V2C0 1.45 0.195833 0.979167 0.5875 0.5875C0.979167 0.195833 1.45 0 2 0H10C10.2833 0 10.5208 0.0958333 10.7125 0.2875C10.9042 0.479167 11 0.716667 11 1C11 1.28333 10.9042 1.52083 10.7125 1.7125C10.5208 1.90417 10.2833 2 10 2H2V16H16V8C16 7.71667 16.0958 7.47917 16.2875 7.2875C16.4792 7.09583 16.7167 7 17 7C17.2833 7 17.5208 7.09583 17.7125 7.2875C17.9042 7.47917 18 7.71667 18 8V16C18 16.55 17.8042 17.0208 17.4125 17.4125C17.0208 17.8042 16.55 18 16 18H2ZM14 4H13C12.7167 4 12.4792 3.90417 12.2875 3.7125C12.0958 3.52083 12 3.28333 12 3C12 2.71667 12.0958 2.47917 12.2875 2.2875C12.4792 2.09583 12.7167 2 13 2H14V1C14 0.716667 14.0958 0.479167 14.2875 0.2875C14.4792 0.0958333 14.7167 0 15 0C15.2833 0 15.5208 0.0958333 15.7125 0.2875C15.9042 0.479167 16 0.716667 16 1V2H17C17.2833 2 17.5208 2.09583 17.7125 2.2875C17.9042 2.47917 18 2.71667 18 3C18 3.28333 17.9042 3.52083 17.7125 3.7125C17.5208 3.90417 17.2833 4 17 4H16V5C16 5.28333 15.9042 5.52083 15.7125 5.7125C15.5208 5.90417 15.2833 6 15 6C14.7167 6 14.4792 5.90417 14.2875 5.7125C14.0958 5.52083 14 5.28333 14 5V4ZM8.25 13L6.4 10.525C6.3 10.3917 6.16667 10.325 6 10.325C5.83333 10.325 5.7 10.3917 5.6 10.525L3.6 13.2C3.46667 13.3667 3.45 13.5417 3.55 13.725C3.65 13.9083 3.8 14 4 14H14C14.2 14 14.35 13.9083 14.45 13.725C14.55 13.5417 14.5333 13.3667 14.4 13.2L11.65 9.525C11.55 9.39167 11.4167 9.325 11.25 9.325C11.0833 9.325 10.95 9.39167 10.85 9.525L8.25 13Z" fill={iconColor} />
       </Svg>
     ),
@@ -291,18 +291,21 @@ const icons: IconsType = (size: string, iconColor: string) => {
     ),
     google: (
       <View style={{ width: size, height: size }}>
-        <Svg width="11" height="11" viewBox="0 0 11 11" fill={iconColor} >
-          <Path d="M10.56 2.25C10.56 1.47 10.49 0.72 10.36 0H0V4.255H5.92C5.665 5.63 4.89 6.795 3.725 7.575V10.335H7.28C9.36 8.42 10.56 5.6 10.56 2.25Z" fill="#4285F4" />
-        </Svg>
-        <Svg width="18" height="9" viewBox="0 0 18 9" fill={iconColor} >
-          <Path d="M9.99992 9.00009C12.9699 9.00009 15.4599 8.01509 17.2799 6.33509L13.7249 3.57509C12.7399 4.23509 11.4799 4.62509 9.99992 4.62509C7.13492 4.62509 4.70992 2.69009 3.84492 0.0900879H0.169922V2.94009C1.97992 6.53509 5.69992 9.00009 9.99992 9.00009Z" fill="#34A853" />
-        </Svg>
-        <Svg width="5" height="10" viewBox="0 0 5 10" fill={iconColor} >
-          <Path d="M4.845 7.09006C4.625 6.43006 4.5 5.72506 4.5 5.00006C4.5 4.27506 4.625 3.57006 4.845 2.91006V0.0600586H1.17C0.4 1.59292 -0.000678626 3.28467 8.62786e-07 5.00006C8.62786e-07 6.77506 0.425001 8.45506 1.17 9.94006L4.845 7.09006Z" fill="#FBBC05" />
-        </Svg>
-        <Svg width="18" height="9" viewBox="0 0 18 9" fill={iconColor} >
-          <Path d="M9.99992 4.375C11.6149 4.375 13.0649 4.93 14.2049 6.02L17.3599 2.865C15.4549 1.09 12.9649 0 9.99992 0C5.69992 0 1.97992 2.465 0.169922 6.06L3.84492 8.91C4.70992 6.31 7.13492 4.375 9.99992 4.375Z" fill="#EA4335" />
-        </Svg>
+
+        <View style={styles.iconleft}>
+          <Svg style={styles.vector} width="9" height="9" viewBox="0 0 9 9" fill="none" >
+            <Path d="M8.8 2.20833C8.8 1.55833 8.74167 0.933328 8.63334 0.333328H0V3.87916H4.93333C4.72083 5.025 4.075 5.99583 3.10417 6.64583V8.94583H6.06667C7.8 7.35 8.8 5 8.8 2.20833Z" fill="#4285F4" />
+          </Svg>
+          <Svg style={styles._vector} width="16" height="9" viewBox="0 0 16 9" fill="none" >
+            <Path d="M8.99999 8.16667C11.475 8.16667 13.55 7.34583 15.0667 5.94583L12.1042 3.64584C11.2833 4.19584 10.2333 4.52083 8.99999 4.52083C6.61249 4.52083 4.59165 2.90833 3.87082 0.741669H0.808319V3.11667C2.31665 6.1125 5.41665 8.16667 8.99999 8.16667Z" fill="#34A853" />
+          </Svg>
+          <Svg style={styles.__vector} width="5" height="10" viewBox="0 0 5 10" fill="none" >
+            <Path d="M4.87084 6.74166C4.68751 6.19167 4.58334 5.60417 4.58334 5C4.58334 4.39583 4.68751 3.80833 4.87084 3.25833V0.883331H1.80834C1.16668 2.16071 0.832778 3.57051 0.833344 5C0.833344 6.47917 1.18751 7.87917 1.80834 9.11667L4.87084 6.74166Z" fill="#FBBC05" />
+          </Svg>
+          <Svg style={styles.___vector} width="16" height="9" viewBox="0 0 16 9" fill="none" >
+            <Path d="M8.99999 4.47916C10.3458 4.47916 11.5542 4.94166 12.5042 5.84999L15.1333 3.22083C13.5458 1.74166 11.4708 0.833328 8.99999 0.833328C5.41665 0.833328 2.31665 2.88749 0.808319 5.88333L3.87082 8.25833C4.59165 6.09166 6.61249 4.47916 8.99999 4.47916Z" fill="#EA4335" />
+          </Svg>
+        </View>
       </View>
     ),
     facebook: (
@@ -314,3 +317,48 @@ const icons: IconsType = (size: string, iconColor: string) => {
   }
 }
 export default Icon
+const styles = StyleSheet.create({
+  iconleft: {
+    flexShrink: 0,
+    height: 20,
+    width: 20,
+    alignItems: 'flex-start',
+    rowGap: 0
+  },
+  vector: {
+    position: 'absolute',
+    flexShrink: 0,
+    top: 8,
+    right: 1,
+    bottom: 3,
+    left: 10,
+    overflow: 'visible'
+  },
+  _vector: {
+    position: 'absolute',
+    flexShrink: 0,
+    top: 12,
+    right: 4,
+    bottom: 1,
+    left: 2,
+    overflow: 'visible'
+  },
+  __vector: {
+    position: 'absolute',
+    flexShrink: 0,
+    top: 6,
+    right: 15,
+    bottom: 6,
+    left: 1,
+    overflow: 'visible'
+  },
+  ___vector: {
+    position: 'absolute',
+    flexShrink: 0,
+    top: 1,
+    right: 4,
+    bottom: 12,
+    left: 2,
+    overflow: 'visible'
+  }
+})
