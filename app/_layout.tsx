@@ -33,13 +33,13 @@ const Layout = () => {
     setIsLoading(false)
   }, [])
 
-  useEffect(() => {
-    if (!isLoading) {
-      if (!token) {
-        router.push('login')
-      }
-    }
-  }, [isLoading])
+  // useEffect(() => {
+  //   if (!isLoading) {
+  //     if (!token) {
+  //       router.push('login')
+  //     }
+  //   }
+  // }, [isLoading])
 
   useEffect(() => {
     if (!isLoading) {
@@ -49,9 +49,21 @@ const Layout = () => {
 
   // useEffect(() => {
   //   if (!isLoading) {
+  //     router.push('search/SearchResult')
+  //   }
+  // }, [isLoading])
+
+  // useEffect(() => {
+  //   if (!isLoading) {
   //     router.push('splashScreen')
   //   }
   // }, [isLoading])
+
+  useEffect(() => {
+    if (!isLoading) {
+      router.push('notifications')
+    }
+  }, [isLoading])
 
   /* useEffect(() => {
     const fetchData = async () => {
