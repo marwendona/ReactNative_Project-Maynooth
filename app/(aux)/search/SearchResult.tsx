@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Animated } from 'react-native';
-import Icon from '../Components/Icon';
-import Card1 from '../Components/Card1';
+import Icon from '../../../Components/Icon';
+import Card1 from '../../../Components/Card1';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { useSelector, useDispatch } from 'react-redux';
+import { service } from '../../../service';
 
-export default function SearchResult() {
+const SearchResult = () => {
     const scaleValue = new Animated.Value(1);
+    const products = useSelector(state => state?.product.products)
+    const [showModal, setShowModal] = useState(false)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+
+        const fetchData = async () => {
+            const { data } = await service.products.productsList()
+            console.log(data)
+            dispatch({ type: 'SET_PRODUCTS', payload: data.paginatedResult })
+            console.log("products ", products)
+
+        }
+        fetchData()
+
+    }, [])
 
     const handleIconPress = () => {
         // Animation logic
@@ -15,8 +33,8 @@ export default function SearchResult() {
         ]).start();
     };
     return (
-        <View style={styles.searchResult}>
-            <View style={styles.tabssort}>
+        <View >
+            <View >
                 <View style={styles.relevance}>
                     <View style={styles.textwrapper}>
                         <TouchableOpacity onPress={handleIconPress}>
@@ -53,7 +71,33 @@ export default function SearchResult() {
                     </View>
                 </View>
             </View>
-            <View style={styles.searchresult}>
+            <View >
+                <View >
+                    <Text >
+                    {products.length} results for Table
+                    </Text>
+                </View>
+
+
+                {
+                    products.map(product => {
+                        return(
+                        <View>
+                            <Card1 key={product.id} title={product.title}
+                                subtitle={product.description}
+                                type={'Product'}
+                                initialPrice={product.price}
+                                discount={(product.price / product.promotion) * 100}
+                                newPrice={product.promotion}
+                                image={product.image}
+                                orientation='Vertical'
+                                rating='5.0'               ></Card1>
+                        </View>)
+                    })
+
+                }
+            </View>
+            {/* <View style={styles.searchresult}>
                 <View style={styles.title}>
                     <Text style={styles.resultsforTable}>
                         {`712 results for Table`}
@@ -61,27 +105,28 @@ export default function SearchResult() {
                 </View>
                 <View style={styles.items}>
                     <View style={styles.col}>
-                        <Card1 size='Small' image='assets/SingleDrawer.jpg' title='Single Drawer Beds' initialPrice='Rp 800.000' newPrice='Rp 600.000' discount='25%' type='Product'
-                               orientation='Vertical' > </Card1>
+                        <Card1 size='Small' image='../assets/SingleDrawer.jpg' title='Single Drawer Beds' initialPrice='Rp 800.000' newPrice='Rp 600.000' discount='25%' type='Product'
+                            orientation='Vertical' > </Card1>
                         <Card1 rating='5.0' size='Small' image='assets/exemple_image.png' title='Wooden Side Table' initialPrice='Rp 1.500.000' newPrice='Rp 2.000.000' discount='25%' type='Product'
-                               orientation='Vertical'  > </Card1>
+                            orientation='Vertical'  > </Card1>
                         <Card1 size='Small' image='assets/solidWood.jpg' title='Solid Wood Coffe..' initialPrice='Rp 2.550.000' newPrice='Rp 3.000.000' discount='15%' type='Product'
-                               orientation='Vertical'  > </Card1>
+                            orientation='Vertical'  > </Card1>
                     </View>
                     <View style={styles._col}>
                         <Card1 rating='5.0' size='Small' image='assets/DoubleDrawer.jpg' title='Double Drawer Bed' initialPrice='Rp 1.500.000' newPrice='Rp 900.000' discount='40%' type='Product'
-                               orientation='Vertical'  > </Card1>
+                            orientation='Vertical'  > </Card1>
                         <Card1 rating='4.8' size='Small' image='assets/woodenCoffe.jpg' title='Wooden Coffee T..' initialPrice='Rp 1.400.000' newPrice='Rp 2.000.000' discount='30%' type='Product'
-                               orientation='Vertical'  > </Card1>
+                            orientation='Vertical'  > </Card1>
                         <Card1 size='Small' image='assets/LongTable.jpg' title='Long Dining Table' initialPrice='Rp 2.800.000' newPrice='Rp 4.000.000' discount='30%' type='Product'
-                               orientation='Vertical'  > </Card1>
+                            orientation='Vertical'  > </Card1>
                     </View>
                 </View>
-            </View>
+            </View> */}
+
         </View>
     )
 }
-
+export default SearchResult
 const styles = StyleSheet.create({
     searchResult: {
         flexShrink: 0,
