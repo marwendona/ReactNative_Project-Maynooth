@@ -3,19 +3,9 @@ import React from 'react'
 import { Slot, Stack, router } from 'expo-router'
 
 const AuxLayout = () => {
-  return (
-      <Stack 
-      screenOptions={{
-        headerLeft: (props) =>{ return <TouchableOpacity onPress={()=>{router.back()}}><Text>go back</Text></TouchableOpacity>
-          
-        },
-      }}
-      >
-
-
-
-      </Stack>
-  )
+    return (
+        <Slot/>
+    )
 }
 
 export default AuxLayout
