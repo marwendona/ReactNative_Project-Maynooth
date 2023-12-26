@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, ImageBackground, StyleSheet, Animated, Button } from 'react-native';
 import { Svg, Path } from 'react-native-svg';
-import Card1 from '../Components/Card1';
-import Icon from '../Components/Icon';
+import Card1 from '../../../Components/Card1';
+import Icon from '../../../Components/Icon';
 import { TextInput, TouchableOpacity } from 'react-native-gesture-handler';
-import ButtonRegular from '../Components/ButtonRegular';
+import ButtonRegular from '../../../Components/ButtonRegular';
 
 export default function SearchFilter() {
     const scaleValue = new Animated.Value(1);
