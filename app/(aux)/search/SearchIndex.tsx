@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet, Animated } from 'react-native';
 import { Svg, Path, Line, Circle } from 'react-native-svg';
-import Icon from '../Components/Icon';
+import Icon from '../../../Components/Icon';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 
 export default function SearchIndex() {
-    const scaleValue = new Animated.Value(1);
+    const scaleValue = new Animated.Value(1); 
 
     const handleIconPress = () => {
         // Animation logic
