@@ -4,11 +4,10 @@ import { TouchableOpacity, View, StyleSheet } from 'react-native';
 import Icon from '../../../Components/Icon';
 import theme from '../../../Components/theme';
 import InputField, { BaseInputFieldSize, BaseInputFieldState } from '../../../Components/InputField';
-
+import SearchResult from './SearchResult';
 import { router, useNavigation } from 'expo-router';
 import BaseInputField from '../../../Components/InputField';
 import SearchFilter from '../SearchFilter';
-import SearchIndex from './SearchIndex';
 
 const Stack = createStackNavigator();
 
@@ -62,7 +61,7 @@ const Layout = () => {
     >
       <Stack.Screen
         name="SearchResult"
-        component={SearchIndex}
+        component={SearchResult}
         options={{ title: 'Search Result' }}
       />
     </Stack.Navigator>
