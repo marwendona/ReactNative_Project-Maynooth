@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update NavItem.tsx">
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" beforeDir="false" />
-    </list>
+    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update _layout.tsx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/Components",
+    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,8 +38,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\Components" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app" />
+      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\Components" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(aux)" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\styles" />
@@ -65,7 +63,7 @@
       <workItem from="1703553225663" duration="525000" />
       <workItem from="1703721921901" duration="303000" />
       <workItem from="1704213215651" duration="527000" />
-      <workItem from="1704588668323" duration="643000" />
+      <workItem from="1704588668323" duration="1016000" />
     </task>
     <task id="LOCAL-00001" summary="add themes">
       <option name="closed" value="true" />
@@ -355,19 +353,77 @@
       <option name="project" value="LOCAL" />
       <updated>1704589210489</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="add cart.tsx">
+      <option name="closed" value="true" />
+      <created>1704589403072</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589403072</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add search.tsx">
+      <option name="closed" value="true" />
+      <created>1704589419007</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589419007</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add favorite.tsx">
+      <option name="closed" value="true" />
+      <created>1704589431483</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589431483</updated>
+    </task>
+    <task id="LOCAL-00040" summary="update home.tsx">
+      <option name="closed" value="true" />
+      <created>1704589446722</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589446722</updated>
+    </task>
+    <task id="LOCAL-00041" summary="update _layout.tsx">
+      <option name="closed" value="true" />
+      <created>1704589457624</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589457624</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update signUp.tsx">
+      <option name="closed" value="true" />
+      <created>1704589660239</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589660239</updated>
+    </task>
+    <task id="LOCAL-00043" summary="update signIp.tsx">
+      <option name="closed" value="true" />
+      <created>1704589673037</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589673037</updated>
+    </task>
+    <task id="LOCAL-00044" summary="update _layout.tsx">
+      <option name="closed" value="true" />
+      <created>1704589681459</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589681459</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
-    <MESSAGE value="update Icon.tsx" />
-    <MESSAGE value="update Diviser.tsx" />
-    <MESSAGE value="update myApi.tsx" />
-    <MESSAGE value="update signUp.tsx" />
-    <MESSAGE value="add SearchIndex.tsx" />
     <MESSAGE value="add SearchList.tsx" />
     <MESSAGE value="add SearchResult.tsx" />
     <MESSAGE value="add splashScreen.tsx" />
@@ -379,7 +435,6 @@
     <MESSAGE value="update SearchIndex.tsx" />
     <MESSAGE value="update SearchList.tsx" />
     <MESSAGE value="update SearchResult.tsx" />
-    <MESSAGE value="update _layout.tsx" />
     <MESSAGE value="add _layout.tsx" />
     <MESSAGE value="update package.json &amp; package-lock.json" />
     <MESSAGE value="update login.tsx" />
@@ -387,6 +442,13 @@
     <MESSAGE value="update FormInputGroup.tsx" />
     <MESSAGE value="update InputField.tsx" />
     <MESSAGE value="update NavItem.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="update NavItem.tsx" />
+    <MESSAGE value="add cart.tsx" />
+    <MESSAGE value="add search.tsx" />
+    <MESSAGE value="add favorite.tsx" />
+    <MESSAGE value="update home.tsx" />
+    <MESSAGE value="update signUp.tsx" />
+    <MESSAGE value="update signIp.tsx" />
+    <MESSAGE value="update _layout.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="update _layout.tsx" />
   </component>
 </project>
