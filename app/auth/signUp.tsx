@@ -1,14 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import LogoMark, { LogoSize } from '../Components/Logomark'
-import FormInputGroup from '../Components/FormInputGroup'
-import BaseLabel, { BaseInputLabelColor } from '../Components/BaseLabel'
-import ButtonRegular, { ButtonRegularSize, ButtonRegularColor, ButtonRegularState, ButtonRegularType } from '../Components/ButtonRegular'
+import LogoMark, { LogoSize } from '../../Components/Logomark'
+import FormInputGroup from '../../Components/FormInputGroup'
+import BaseLabel, { BaseInputLabelColor } from '../../Components/BaseLabel'
+import ButtonRegular, { ButtonRegularSize, ButtonRegularColor, ButtonRegularState, ButtonRegularType } from '../../Components/ButtonRegular'
 import { router } from 'expo-router'
-import Divider from '../Components/Divider'
-import theme from '../Components/theme'
+import Divider from '../../Components/Divider'
+import theme from '../../Components/theme'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { service } from '../../service'
 
 const SignUp = () => {
+  const [ email , setEmail] = useState('')
+  const [ password , setPassword] = useState('')
+  const emailFn=( text:string )=>{setEmail(text)  }
+  const passwordFn=( text:string )=>{ setPassword(text)}
+  const login = async() => {
+
+    
+    console.log(email, password)
+
+    const {data} = await service.login.loginCreate({email, password})
+    let value = data?.tokens?.access
+    service.setSecurityData({
+      headers: {
+        authorization: 'Bearer '+data?.tokens?.access.token
+      }
+
+    })
+
+    try {
+      await AsyncStorage.setItem('token', JSON.stringify(value));
+    } catch (e) {
+      // saving error
+    }
+    router.push({
+      pathname : '(tabs)/home'
+    })
+    console.log(data)
+  }
+
   return (
         <View style={[styles.MainPage]}>
             <LogoMark size={LogoSize.Small} />
@@ -43,27 +74,32 @@ const SignUp = () => {
                     labelPrimary="Email"
                     iconLeftInner="mail"
                     value="your@email.com"
+                    content={emailFn}
+
                 />
                 <FormInputGroup
                     color={BaseInputLabelColor.Dark}
                     labelPrimary="Password"
                     iconLeftInner="lock"
                     value="Your password"
+                    content={passwordFn}
                 />
                 <View style={styles.buttonsignupwrapper}>
                     <View style={styles.buttonsignup}>
+                      <TouchableOpacity onPress={login}>
                         <ButtonRegular
                             size={ButtonRegularSize.Large}
                             color={ButtonRegularColor.Dark}
                             state={ButtonRegularState.Default}
                             type={ButtonRegularType.Filled}
                             text="Create account"/>
+                      </TouchableOpacity>
                     </View>
                 </View>
             </View>
             <View style={styles.ctasignupwrapper}>
                 <Text style={styles.alreadyhaveanaccount}>Already have an account?</Text>
-                <TouchableOpacity onPress={() => { router.push({ pathname: 'login' }) }}>
+                <TouchableOpacity onPress={() => { router.push({ pathname: '/auth/signIn' }) }}>
                     <Text style={styles.linksignup}>Log in</Text>
                 </TouchableOpacity>
             </View>
