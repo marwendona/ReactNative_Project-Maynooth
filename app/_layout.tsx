@@ -29,63 +29,28 @@ const Layout = () => {
   useEffect(() => {
     console.log('init page')
     verifToken()
-
     setIsLoading(false)
   }, [])
 
-  // useEffect(() => {
-  //   if (!isLoading) {
-  //     if (!token) {
-  //       router.push('login')
-  //     }
-  //   }
-  // }, [isLoading])
 
   useEffect(() => {
     if (!isLoading) {
-      router.push('signUp')
+      router.push('/auth/signIn')
     }
   }, [isLoading])
-
-  // useEffect(() => {
-  //   if (!isLoading) {
-  //     router.push('search/SearchResult')
-  //   }
-  // }, [isLoading])
-
-  // useEffect(() => {
-  //   if (!isLoading) {
-  //     router.push('splashScreen')
-  //   }
-  // }, [isLoading])
 
   useEffect(() => {
-    if (!isLoading) {
-      router.push('notifications')
+    if (token) {
+      router.push('/(tabs)/home')
     }
-  }, [isLoading])
-
-  /* useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await service.products.productsList();
-        const fetchedSpecData = data.data.paginatedResult;
-        setSpecData(fetchedSpecData);
-        console.log(fetchedSpecData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-
-    fetchData();
-  }, []);  */
+  }, [token])
 
   if (isLoading) { return <Text>is Loading ...</Text> } else {
     return (
-        <Provider store={store}>
-          <Slot></Slot>
+      <Provider store={store}>
+        <Slot></Slot>
 
-        </Provider>
+      </Provider>
     )
   }
 }
