@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="add _layout.tsx">
-      <change afterPath="$PROJECT_DIR$/app/(aux)/SearchFilter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(aux)/SearchResult/SearchResult.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(aux)/SearchResult/_layout.tsx" afterDir="false" />
+    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update SearchResult.tsx &amp; SearchFilter.tsx">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(aux)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(aux)/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(aux)/search/SearchFilter.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(aux)/search/SearchResult.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(aux)/search/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(aux)/search/_layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Components/FormInputGroup.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,26 +24,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\MSI\\Documents\\IIT\\3GLID\\CrossPlateformeReactNative(AminaAbdelkafi)\\Projects\\Project-Maynooth\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\MSI\\Documents\\IIT\\3GLID\\CrossPlateformeReactNative(AminaAbdelkafi)\\Projects\\Project-Maynooth\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(aux)" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth" />
+      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(aux)" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\styles" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\store" />
     </key>
@@ -74,7 +65,8 @@
       <workItem from="1703108880242" duration="143000" />
       <workItem from="1703553225663" duration="525000" />
       <workItem from="1703721921901" duration="303000" />
-      <workItem from="1704213215651" duration="304000" />
+      <workItem from="1704213215651" duration="527000" />
+      <workItem from="1704588668323" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="add themes">
       <option name="closed" value="true" />
@@ -316,7 +308,31 @@
       <option name="project" value="LOCAL" />
       <updated>1703553741745</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="update package.json &amp; package-lock.json">
+      <option name="closed" value="true" />
+      <created>1704213627120</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1704213627120</updated>
+    </task>
+    <task id="LOCAL-00032" summary="update login.tsx">
+      <option name="closed" value="true" />
+      <created>1704213639998</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1704213639998</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update SearchResult.tsx &amp; SearchFilter.tsx">
+      <option name="closed" value="true" />
+      <created>1704213733863</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1704213733863</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,9 +359,11 @@
     <MESSAGE value="update SearchIndex.tsx" />
     <MESSAGE value="update SearchList.tsx" />
     <MESSAGE value="update SearchResult.tsx" />
-    <MESSAGE value="update login.tsx" />
     <MESSAGE value="update _layout.tsx" />
     <MESSAGE value="add _layout.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add _layout.tsx" />
+    <MESSAGE value="update package.json &amp; package-lock.json" />
+    <MESSAGE value="update login.tsx" />
+    <MESSAGE value="update SearchResult.tsx &amp; SearchFilter.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="update SearchResult.tsx &amp; SearchFilter.tsx" />
   </component>
 </project>

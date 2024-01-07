@@ -13,9 +13,10 @@ export interface FormInputGroupProps {
   iconLeftInner: string
   iconRightInner?: string
   color: BaseInputLabelColor
+  content:any
 }
 
-const FormInputGroup: React.FC<FormInputGroupProps> = ({ labelPrimary = '', labelRight, iconRight, iconLeft, iconLeftInner, iconRightInner, labelSecondary, value = '' }) => {
+const FormInputGroup: React.FC<FormInputGroupProps> = ({ labelPrimary = '', labelRight, iconRight, iconLeft, iconLeftInner, iconRightInner, labelSecondary, value = '' ,content}) => {
   return (
         <View style={styles.formInputgroup}>
 
@@ -32,7 +33,8 @@ const FormInputGroup: React.FC<FormInputGroupProps> = ({ labelPrimary = '', labe
              state={BaseInputFieldState.Default}
              iconLeft={iconLeftInner}
              iconRight={iconRightInner}
-             text={value}/>
+             text={value}
+             content={content}/>
         </View>
   )
 }
