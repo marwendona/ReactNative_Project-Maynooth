@@ -19,11 +19,10 @@ const TabsLayout = () => {
         name="home"
         options={{
           headerLeft: () => (
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <View style={{ flexDirection: "row", alignItems: "center", marginLeft: 24  }}>
               {" "}
               <Image
                 source={require("../../assets/logo.png")}
-                style={{ marginRight: 8 }}
               />{" "}
               <Image source={require("../../assets/MAYNOOTH.png")} />
             </View>
@@ -31,7 +30,7 @@ const TabsLayout = () => {
           title:"",
           headerTitle:"",
           headerRight: () => (
-            <TouchableOpacity
+            <TouchableOpacity style={{ marginRight: 24 }}
               onPress={() => {
                 router.push({ pathname: "(aux)/notification" });
               }}

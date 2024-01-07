@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="add Caroussel.tsx" />
+    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update home.tsx">
+      <change beforePath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/_layout.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +28,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/assets",
+    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/app/(aux)",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,30 +66,7 @@
       <workItem from="1703721921901" duration="303000" />
       <workItem from="1704213215651" duration="527000" />
       <workItem from="1704588668323" duration="1477000" />
-    </task>
-    <task id="LOCAL-00001" summary="add themes">
-      <option name="closed" value="true" />
-      <created>1703076764429</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1703076764430</updated>
-    </task>
-    <task id="LOCAL-00002" summary="add store">
-      <option name="closed" value="true" />
-      <created>1703076806268</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1703076806268</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add .expo">
-      <option name="closed" value="true" />
-      <created>1703076890922</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1703076890922</updated>
+      <workItem from="1704633800971" duration="381000" />
     </task>
     <task id="LOCAL-00004" summary="update">
       <option name="closed" value="true" />
@@ -457,15 +436,37 @@
       <option name="project" value="LOCAL" />
       <updated>1704590138253</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="move notification.tsx">
+      <option name="closed" value="true" />
+      <created>1704634133446</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1704634133446</updated>
+    </task>
+    <task id="LOCAL-00051" summary="delete test.tsx">
+      <option name="closed" value="true" />
+      <created>1704634146026</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1704634146026</updated>
+    </task>
+    <task id="LOCAL-00052" summary="update home.tsx">
+      <option name="closed" value="true" />
+      <created>1704634167221</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1704634167221</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update Card1.tsx (add rating props)" />
-    <MESSAGE value="add photos for SearchResult" />
     <MESSAGE value="add SearchFilter.tsx" />
     <MESSAGE value="update SearchFilter.tsx" />
     <MESSAGE value="update SearchIndex.tsx" />
@@ -481,7 +482,6 @@
     <MESSAGE value="add cart.tsx" />
     <MESSAGE value="add search.tsx" />
     <MESSAGE value="add favorite.tsx" />
-    <MESSAGE value="update home.tsx" />
     <MESSAGE value="update signUp.tsx" />
     <MESSAGE value="update signIp.tsx" />
     <MESSAGE value="update myApi.ts" />
@@ -489,6 +489,9 @@
     <MESSAGE value="update Pagination.tsx" />
     <MESSAGE value="add assets" />
     <MESSAGE value="add Caroussel.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Caroussel.tsx" />
+    <MESSAGE value="move notification.tsx" />
+    <MESSAGE value="delete test.tsx" />
+    <MESSAGE value="update home.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="update home.tsx" />
   </component>
 </project>
