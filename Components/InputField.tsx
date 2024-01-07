@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from 'react-native'
 import Icon from './Icon'
-import React from 'react'
+import React, { useState } from 'react'
 import theme from "./theme";
 import {TextInput} from "react-native-gesture-handler";
 export interface BaseInputFieldProps {
@@ -9,6 +9,7 @@ export interface BaseInputFieldProps {
   text?: string
   iconLeft?: string
   iconRight?: string
+  content:any
 }
 
 export enum BaseInputFieldSize {
@@ -29,7 +30,8 @@ export enum BaseInputFieldState {
   SuccessFilled = 'Success_Filled',
 }
 
-const BaseInputField: React.FC<BaseInputFieldProps> = ({ size, state, text, iconLeft, iconRight }) => {
+const BaseInputField: React.FC<BaseInputFieldProps> = ({ size, state, text, iconLeft, iconRight ,content}) => {
+  const [inputText, setInputText] = useState('');
   let SizeStyles
   switch (size) {
     case BaseInputFieldSize.Small:
@@ -84,7 +86,13 @@ const BaseInputField: React.FC<BaseInputFieldProps> = ({ size, state, text, icon
         <View style={{ ...SizeStyles.baseInputfield, ...StateStyles.baseInputfield }} >
             {iconLeft && <Icon iconName={iconLeft} size={size} color={theme.colors.gray50} />}
             <View style={{ ...SizeStyles.textwrapper, ...StateStyles.textwrapper }}>
-                <TextInput placeholder={text} style={{ ...SizeStyles.inputvalue, ...StateStyles.inputvalue }}>
+                <TextInput placeholder={text} style={{ ...SizeStyles.inputvalue, ...StateStyles.inputvalue }}  onChangeText={
+                  newText=>{
+                    setInputText(newText)
+                    content(newText)
+                }}
+                value={inputText}
+                >
                 </TextInput>
             </View>
             {iconRight && <Icon iconName={iconRight} size={size} color={theme.colors.gray100} />}
