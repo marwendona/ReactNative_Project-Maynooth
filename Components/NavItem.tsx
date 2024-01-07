@@ -8,10 +8,11 @@ export interface NavItemProps {
     icon: string;
     text?: string;
     hasBadge?: boolean;
+    active?: boolean;
 }
 
-const NavItem: React.FC<NavItemProps> = ({ icon, text, hasBadge = false }) => {
-    const [isActive, setIsActive] = useState(false);
+const NavItem: React.FC<NavItemProps> = ({ icon, text, hasBadge = false, active=false }) => {
+    const [isActive, setIsActive] = useState(active);
 
     const handlePress = () => {
         setIsActive(!isActive);
