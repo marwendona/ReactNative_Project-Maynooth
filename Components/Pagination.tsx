@@ -41,11 +41,18 @@ const Pagination: React.FC<PaginationProps> = ({ size, state }) => {
 
   return (
         <View style={styles.baseDot}>
-            <ImageBackground style={styles.photo} source={require('../assets/#6f6e73.png')}>
-            <Svg style={styles.dot} width="12" height="12" viewBox="-125 -70 12 12" fill="none" >
-                <Circle cx="6" cy="8" r={circleSize.radius} transform="rotate(-90 6 6)" fill={circleState.cercle.color} />
+            <Svg style={styles.dot} width={circleSize.radius} height={circleSize.radius} viewBox="-125 -70 12 12" fill="none" >
+                <Circle cx="6" cy="8" r={circleSize.radius} fill='#09111F'/>
            </Svg>
-           </ImageBackground>
+           <Svg style={styles.dot} width={circleSize.radius} height={circleSize.radius} viewBox="-125 -70 12 12" fill="none" >
+                <Circle cx="6" cy="8" r={circleSize.radius} fill='white' />
+           </Svg>
+           <Svg style={styles.dot} width={circleSize.radius} height={circleSize.radius} viewBox="-125 -70 12 12" fill="none" >
+                <Circle cx="6" cy="8" r={circleSize.radius} fill='white' />
+           </Svg>
+           <Svg style={styles.dot} width={circleSize.radius} height={circleSize.radius} viewBox="-125 -70 12 12" fill="none" >
+                <Circle cx="6" cy="8" r={circleSize.radius} fill='white' />
+           </Svg>
         </View>
   )
 }
@@ -53,16 +60,6 @@ const Pagination: React.FC<PaginationProps> = ({ size, state }) => {
 export default Pagination
 
 const styles = StyleSheet.create({
-  photo: {
-    zIndex: -1,
-    flexShrink: 0,
-    height: 154,
-    width: 256,
-    alignItems: 'flex-start',
-    rowGap: 0,
-    borderRadius: 12,
-    overflow: 'hidden'
-  },
   baseDot: {
     flexShrink: 0,
     height: 12,
@@ -76,12 +73,7 @@ const styles = StyleSheet.create({
     rowGap: 0
   },
   dot: {
-    position: 'absolute',
-    flexShrink: 0,
-    top: 0,
-    right: 0,
-    bottom: 0,
-    left: 0,
+    margin:6,
     overflow: 'visible'
   }
 })
