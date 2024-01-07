@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update _layout.tsx" />
+    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="add notification.ts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,21 +21,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/app/(aux)",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\MSI\\Documents\\IIT\\3GLID\\CrossPlateformeReactNative(AminaAbdelkafi)\\Projects\\Project-Maynooth\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/app/(aux)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\MSI\\Documents\\IIT\\3GLID\\CrossPlateformeReactNative(AminaAbdelkafi)\\Projects\\Project-Maynooth\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(aux)" />
@@ -43,6 +43,9 @@
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\assets" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\Components" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\store\reducers" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,14 +68,7 @@
       <workItem from="1704213215651" duration="527000" />
       <workItem from="1704588668323" duration="1477000" />
       <workItem from="1704633800971" duration="516000" />
-    </task>
-    <task id="LOCAL-00005" summary="update Icon.tsx">
-      <option name="closed" value="true" />
-      <created>1703076941009</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1703076941009</updated>
+      <workItem from="1704644104604" duration="43000" />
     </task>
     <task id="LOCAL-00006" summary="update Diviser.tsx">
       <option name="closed" value="true" />
@@ -458,14 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1704634258150</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="add notification.ts">
+      <option name="closed" value="true" />
+      <created>1704644137365</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1704644137365</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add SearchFilter.tsx" />
     <MESSAGE value="update SearchFilter.tsx" />
     <MESSAGE value="update SearchIndex.tsx" />
     <MESSAGE value="update SearchList.tsx" />
@@ -490,6 +493,7 @@
     <MESSAGE value="delete test.tsx" />
     <MESSAGE value="update home.tsx" />
     <MESSAGE value="update _layout.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="update _layout.tsx" />
+    <MESSAGE value="add notification.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="add notification.ts" />
   </component>
 </project>
