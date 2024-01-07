@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update _layout.tsx" />
+    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="add Caroussel.tsx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/app",
+    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -38,11 +38,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app" />
+      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\assets" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\Components" />
+      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app" />
+      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\service" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth" />
-      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(aux)" />
-      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\styles" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -63,7 +63,7 @@
       <workItem from="1703553225663" duration="525000" />
       <workItem from="1703721921901" duration="303000" />
       <workItem from="1704213215651" duration="527000" />
-      <workItem from="1704588668323" duration="1016000" />
+      <workItem from="1704588668323" duration="1477000" />
     </task>
     <task id="LOCAL-00001" summary="add themes">
       <option name="closed" value="true" />
@@ -417,17 +417,53 @@
       <option name="project" value="LOCAL" />
       <updated>1704589681459</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="update myApi.ts">
+      <option name="closed" value="true" />
+      <created>1704589738541</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589738541</updated>
+    </task>
+    <task id="LOCAL-00046" summary="update _layout.tsx">
+      <option name="closed" value="true" />
+      <created>1704589794142</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1704589794142</updated>
+    </task>
+    <task id="LOCAL-00047" summary="update Pagination.tsx">
+      <option name="closed" value="true" />
+      <created>1704590088263</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1704590088263</updated>
+    </task>
+    <task id="LOCAL-00048" summary="add assets">
+      <option name="closed" value="true" />
+      <created>1704590113171</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1704590113171</updated>
+    </task>
+    <task id="LOCAL-00049" summary="add Caroussel.tsx">
+      <option name="closed" value="true" />
+      <created>1704590138253</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1704590138253</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add SearchList.tsx" />
-    <MESSAGE value="add SearchResult.tsx" />
-    <MESSAGE value="add splashScreen.tsx" />
-    <MESSAGE value="add .gitignore" />
     <MESSAGE value="update Card1.tsx (add rating props)" />
     <MESSAGE value="add photos for SearchResult" />
     <MESSAGE value="add SearchFilter.tsx" />
@@ -448,7 +484,11 @@
     <MESSAGE value="update home.tsx" />
     <MESSAGE value="update signUp.tsx" />
     <MESSAGE value="update signIp.tsx" />
+    <MESSAGE value="update myApi.ts" />
     <MESSAGE value="update _layout.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="update _layout.tsx" />
+    <MESSAGE value="update Pagination.tsx" />
+    <MESSAGE value="add assets" />
+    <MESSAGE value="add Caroussel.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Caroussel.tsx" />
   </component>
 </project>
