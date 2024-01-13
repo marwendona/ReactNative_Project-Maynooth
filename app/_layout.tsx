@@ -8,6 +8,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import { useFonts } from 'expo-font'
 
 const Layout = () => {
+  const [loaded,setLoaded] = useState(false)
   const [specData, setSpecData] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [token, setToken] = useState()
@@ -34,23 +35,20 @@ const Layout = () => {
 
 
   useEffect(() => {
-    if (!isLoading) {
+    if (!isLoading&&!token) {
       router.push('/auth/signIn')
-    }
-  }, [isLoading])
+      console.log(token);
 
-  useEffect(() => {
-    if (token) {
-      router.push('/(tabs)/home')
     }
   }, [token])
 
+
   if (isLoading) { return <Text>is Loading ...</Text> } else {
     return (
-      <Provider store={store}>
-        <Slot></Slot>
+        <Provider store={store}>
+          <Slot></Slot>
 
-      </Provider>
+        </Provider>
     )
   }
 }
