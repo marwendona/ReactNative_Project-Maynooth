@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import { Svg, Line } from 'react-native-svg'
 
 interface DividerProps {
-  text: string
+  text?: string
   type: 'Vertical' | 'Horizontal'
 
 }
