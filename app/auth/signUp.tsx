@@ -16,28 +16,21 @@ const SignUp = () => {
   const emailFn=( text:string )=>{setEmail(text)  }
   const passwordFn=( text:string )=>{ setPassword(text)}
   const login = async() => {
-
-    
-    console.log(email, password)
-
-    const {data} = await service.login.loginCreate({email, password})
-    let value = data?.tokens?.access
-    service.setSecurityData({
-      headers: {
-        authorization: 'Bearer '+data?.tokens?.access.token
-      }
-
-    })
-
     try {
+      const {data} = await service.login.loginCreate({email, password})
+      let value = data?.tokens?.access
+      service.setSecurityData({
+        headers: {
+          authorization: 'Bearer '+data?.tokens?.access.token
+        }
+
+      })
       await AsyncStorage.setItem('token', JSON.stringify(value));
     } catch (e) {
-      // saving error
     }
     router.push({
-      pathname : '(tabs)/home'
+      pathname : 'auth/signIn'
     })
-    console.log(data)
   }
 
   return (
@@ -76,6 +69,7 @@ const SignUp = () => {
                     value="your@email.com"
                     content={emailFn}
 
+
                 />
                 <FormInputGroup
                     color={BaseInputLabelColor.Dark}
@@ -99,7 +93,7 @@ const SignUp = () => {
             </View>
             <View style={styles.ctasignupwrapper}>
                 <Text style={styles.alreadyhaveanaccount}>Already have an account?</Text>
-                <TouchableOpacity onPress={() => { router.push({ pathname: '/auth/signIn' }) }}>
+                <TouchableOpacity onPress={() => { SignUp() }}>
                     <Text style={styles.linksignup}>Log in</Text>
                 </TouchableOpacity>
             </View>

@@ -34,9 +34,11 @@ const LayoutAuth = () => {
         },
         headerTitleAlign:'center',
         headerLeft: () => (
+          <View style={{marginLeft: 24}}>
           <TouchableOpacity onPress={() => router.back()}>
             <AntDesign name="arrowleft" size={24} color="black" />
           </TouchableOpacity>
+          </View>
         ),
       }}
     />
@@ -55,9 +57,11 @@ const LayoutAuth = () => {
         },
         headerTitleAlign:'center',
         headerLeft: () => (
+          <View style={{marginLeft: 24}}>
           <TouchableOpacity onPress={() => router.back()}>
             <AntDesign name="arrowleft" size={24} color="black" />
           </TouchableOpacity>
+          </View>
         ),
       }}
     />
