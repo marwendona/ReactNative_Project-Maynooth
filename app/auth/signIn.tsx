@@ -12,16 +12,17 @@ import { router } from 'expo-router'
 import { themeGlobal } from '../../styles/themeGlobal'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { service } from '../../service'
+import {useDispatch} from "react-redux";
 
 const signIn = () => {
-
+  const dispatch = useDispatch();
   const [ email , setEmail] = useState('')
   const [ password , setPassword] = useState('')
   const emailFn=(text:string )=>{setEmail(text)}
   const passwordFn=( text:string )=>{ setPassword(text)}
   const login = async() => {
 
-    
+
     console.log(email, password)
 
     const {data} = await service.login.loginCreate({email, password})
@@ -35,11 +36,13 @@ const signIn = () => {
 
     try {
       await AsyncStorage.setItem('token', JSON.stringify(value));
+      await AsyncStorage.setItem("userData", JSON.stringify(data?.user));
+      dispatch({ type: "SET_USER", payload: data?.user });
     } catch (e) {
-      // saving error
     }
     router.push({
       pathname : '(tabs)/home'
+      // pathname : '(tabs)/profile'
     })
     console.log(data)
   }
