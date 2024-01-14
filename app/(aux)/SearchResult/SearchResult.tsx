@@ -51,48 +51,48 @@ const SearchResult = () => {
             </View>
             <View>
                 <View style={styles.container}>
-                    <Text style={styles.resultsText}>{products.length} results for Table</Text>
+                <Text style={styles.resultsText}>{products.length} results for Table</Text>
                 </View>
 
                 <View style={styles.containerprod}>
                     {products.map((product: any, index: any) => (
                         <View key={index} style={styles.columnWrapper}>
-                            <View key={product.id} style={styles.productCardWrapper}>
-                                <Card1
-                                    title={product.title}
-                                    subtitle={product.description}
-                                    type={'Product'}
-                                    initialPrice={product.price}
-                                    discount={(product.price / product.promotion) * 100}
-                                    newPrice={product.promotion}
-                                    image={product.image}
-                                    orientation='Vertical'
-                                    rating='5.0'
-                                />
-                            </View></View>
+                        <View key={product.id} style={styles.productCardWrapper}>
+                            <Card1
+                                title={product.title}
+                                subtitle={product.description}
+                                type={'Product'}
+                                initialPrice={product.price}
+                                discount={(product.price / product.promotion) * 100}
+                                newPrice={product.promotion}
+                                image={product.image}
+                                orientation='Vertical'
+                                rating='5.0'
+                            />
+                        </View></View>
                     ))}
                 </View>
             </View>
 
-
+            
         </View>
 
-
+        
     )
 }
 export default SearchResult
 const styles = StyleSheet.create({
     resultsText: {
         fontSize: 18,
-        fontWeight: 'bold',
+        fontWeight: 'bold', 
     },
     containerprod: {
         marginBottom: 20,
-        paddingHorizontal: 20,
-        flexDirection: "row",
-        justifyContent: "space-around",
-        flexWrap: "wrap",
-        overflow: "hidden",
+    paddingHorizontal: 20,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    flexWrap: "wrap",
+    overflow: "hidden",
     },
     containerprodAfter: {
         flex: 999,
@@ -147,12 +147,12 @@ const styles = StyleSheet.create({
         paddingHorizontal: 0
     },
     columnWrapper: {
-        gap: 20,
+      gap: 20,
     },
     productCardWrapper: {
-        marginBottom: 20,
-        borderRadius: 10,
-        overflow: "hidden",
+      marginBottom: 20,
+      borderRadius: 10,
+      overflow: "hidden",
     },
 
 })
