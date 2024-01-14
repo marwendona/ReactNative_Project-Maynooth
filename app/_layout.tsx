@@ -17,6 +17,8 @@ const Layout = () => {
   })
   const verifToken = async () => {
     const value = await AsyncStorage.getItem('token')
+    console.log(value);
+
     if (value) {
       setToken(JSON.parse(value).token)
       service.setSecurityData({
@@ -31,19 +33,24 @@ const Layout = () => {
     console.log('init page')
     verifToken()
     setIsLoading(false)
+    console.log(token);
   }, [])
 
 
   useEffect(() => {
-    if (!isLoading&&!token) {
+    console.log('init token');
+    console.log(!isLoading,!token);
+
+    if (!isLoading  || !token) {
       router.push('/auth/signIn')
       console.log(token);
 
     }
+
   }, [token])
 
 
-  if (isLoading) { return <Text>is Loading ...</Text> } else {
+  if (isLoading) { return <Slot></Slot>} else {
     return (
         <Provider store={store}>
           <Slot></Slot>
