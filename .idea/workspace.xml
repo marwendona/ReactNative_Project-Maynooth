@@ -4,79 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-decorators/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-decorators/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/lib/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/lib/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-new-target/lib/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-new-target/lib/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-super/lib/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-super/lib/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-catch-binding/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-catch-binding/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-react-jsx-self/lib/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-react-jsx-self/lib/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/available-plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/available-plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@expo/cli/build/src/config/configAsync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/cli/build/src/config/configAsync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@expo/cli/build/src/start/server/metro/inspector-proxy/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@expo/cli/build/src/start/server/metro/inspector-proxy/device.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@expo/image-utils/node_modules/jsonfile/node_modules/universalify/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/create-cache-key-function/node_modules/ansi-styles/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@jest/fake-timers/node_modules/@types/yargs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-clean/node_modules/path-key/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-platform-ios/node_modules/.bin/node-which" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@storybook/addons/node_modules/regenerator-runtime/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@storybook/components/node_modules/regenerator-runtime/runtime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@storybook/theming/node_modules/regenerator-runtime/runtime.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/eachOfLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/eachOfLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/find.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/find.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/Heap.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/Heap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/atob-btoa.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/atob-btoa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/background-repeat-round-space.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/background-repeat-round-space.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/chacha20-poly1305.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/chacha20-poly1305.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/clipboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/clipboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-at-counter-style.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-at-counter-style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-reflections.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-reflections.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-resize.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-resize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-text-indent.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-text-indent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-text-justify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/css-text-justify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/form-attribute.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/form-attribute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/iframe-srcdoc.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/iframe-srcdoc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/mpeg-dash.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/mpeg-dash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/nav-timing.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/nav-timing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/pointerlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/pointerlock.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/prefers-color-scheme.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/prefers-color-scheme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/speech-synthesis.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/speech-synthesis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/word-break.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/word-break.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/regions/BG.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/regions/BG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/regions/SD.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/regions/SD.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/regions/SZ.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/regions/SZ.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/regions/VI.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/regions/VI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/component-type/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/component-type/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/content-disposition/node_modules/safe-buffer/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/csso/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-es-x/lib/rules/no-intl-supportedvaluesof.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-es-x/lib/rules/no-intl-supportedvaluesof.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-es-x/lib/rules/no-math-cosh.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-es-x/lib/rules/no-math-cosh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-es-x/lib/rules/no-number-minsafeinteger.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-es-x/lib/rules/no-number-minsafeinteger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/eslint-plugin-es-x/lib/rules/no-shared-array-buffer.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint-plugin-es-x/lib/rules/no-shared-array-buffer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/padding-line-between-statements.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/padding-line-between-statements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/eslint/lib/rules/semi-style.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/eslint/lib/rules/semi-style.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/glob/glob.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/glob/glob.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/jest-message-util/node_modules/@types/yargs/helpers.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/metro-file-map/node_modules/jest-util/build/installCommonGlobals.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/node-html-parser/node_modules/domutils/lib/querying.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/parse-json/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/parse-json/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/qs/test/stringify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/qs/test/stringify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/readable-stream/transform.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/renderkid/node_modules/entities/lib/maps/decode.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/renderkid/node_modules/entities/lib/maps/entities.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/source-map/lib/source-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/source-map/lib/source-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/spdy-transport/node_modules/readable-stream/lib/internal/streams/from.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/spdy-transport/node_modules/readable-stream/readable-browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/svgo/node_modules/css-select/lib/pseudo-selectors/aliases.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/svgo/node_modules/css-select/lib/pseudo-selectors/aliases.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/svgo/node_modules/css-select/lib/types.d.ts.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/svgo/node_modules/css-select/lib/types.d.ts.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/svgo/node_modules/domhandler/lib/node.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/svgo/node_modules/domhandler/lib/node.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/svgo/node_modules/domutils/lib/legacy.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/svgo/node_modules/domutils/lib/legacy.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/svgo/node_modules/domutils/lib/stringify.d.ts.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/svgo/node_modules/domutils/lib/stringify.d.ts.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tsconfig-paths/lib/__tests__/tsconfig-loader.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tsconfig-paths/lib/__tests__/tsconfig-loader.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/wrap-ansi/node_modules/strip-ansi/index.js" beforeDir="false" />
-    </list>
+    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update index.tsx" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,46 +71,7 @@
       <workItem from="1704644104604" duration="43000" />
       <workItem from="1704646011741" duration="532000" />
       <workItem from="1705169214550" duration="365000" />
-    </task>
-    <task id="LOCAL-00007" summary="update _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1703076968127</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1703076968127</updated>
-    </task>
-    <task id="LOCAL-00008" summary="update myApi.tsx">
-      <option name="closed" value="true" />
-      <created>1703077105258</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1703077105258</updated>
-    </task>
-    <task id="LOCAL-00009" summary="update _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1703077223803</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1703077223803</updated>
-    </task>
-    <task id="LOCAL-00010" summary="update login.tsx">
-      <option name="closed" value="true" />
-      <created>1703077233389</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1703077233389</updated>
-    </task>
-    <task id="LOCAL-00011" summary="update signUp.tsx">
-      <option name="closed" value="true" />
-      <created>1703077247006</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1703077247006</updated>
+      <workItem from="1705169907006" duration="953000" />
     </task>
     <task id="LOCAL-00012" summary="add SearchIndex.tsx">
       <option name="closed" value="true" />
@@ -536,16 +425,53 @@
       <option name="project" value="LOCAL" />
       <updated>1704646390112</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="update SearchResult.tsx">
+      <option name="closed" value="true" />
+      <created>1705170758221</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1705170758222</updated>
+    </task>
+    <task id="LOCAL-00057" summary="update home.tsx">
+      <option name="closed" value="true" />
+      <created>1705170773413</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1705170773414</updated>
+    </task>
+    <task id="LOCAL-00058" summary="update _layout.tsx in (tabs)">
+      <option name="closed" value="true" />
+      <created>1705170808355</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1705170808356</updated>
+    </task>
+    <task id="LOCAL-00059" summary="update _layout.tsx">
+      <option name="closed" value="true" />
+      <created>1705170816270</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1705170816270</updated>
+    </task>
+    <task id="LOCAL-00060" summary="update index.tsx">
+      <option name="closed" value="true" />
+      <created>1705170852982</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1705170852982</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update SearchIndex.tsx" />
-    <MESSAGE value="update SearchList.tsx" />
-    <MESSAGE value="update SearchResult.tsx" />
     <MESSAGE value="add _layout.tsx" />
     <MESSAGE value="update package.json &amp; package-lock.json" />
     <MESSAGE value="update login.tsx" />
@@ -564,10 +490,13 @@
     <MESSAGE value="add Caroussel.tsx" />
     <MESSAGE value="move notification.tsx" />
     <MESSAGE value="delete test.tsx" />
-    <MESSAGE value="update home.tsx" />
-    <MESSAGE value="update _layout.tsx" />
     <MESSAGE value="add notification.ts" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update SearchResult.tsx" />
+    <MESSAGE value="update home.tsx" />
+    <MESSAGE value="update _layout.tsx in (tabs)" />
+    <MESSAGE value="update _layout.tsx" />
+    <MESSAGE value="update index.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="update index.tsx" />
   </component>
 </project>
