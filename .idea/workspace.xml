@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update index.tsx" />
+    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="add ColorVariant.tsx">
+      <change afterPath="$PROJECT_DIR$/Components/ProductCarousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/ProductReview.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Components/VerticalDivider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(aux)/product/[product].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(aux)/product/[product].tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,27 +27,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/app/(aux)&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\MSI\\Documents\\IIT\\3GLID\\CrossPlateformeReactNative(AminaAbdelkafi)\\Projects\\Project-Maynooth\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/Components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\MSI\\Documents\\IIT\\3GLID\\CrossPlateformeReactNative(AminaAbdelkafi)\\Projects\\Project-Maynooth\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\Components" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(aux)" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(tabs)" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\assets" />
-      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\Components" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -72,38 +78,8 @@
       <workItem from="1704646011741" duration="532000" />
       <workItem from="1705169214550" duration="365000" />
       <workItem from="1705169907006" duration="953000" />
-    </task>
-    <task id="LOCAL-00012" summary="add SearchIndex.tsx">
-      <option name="closed" value="true" />
-      <created>1703077279729</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1703077279729</updated>
-    </task>
-    <task id="LOCAL-00013" summary="add SearchList.tsx">
-      <option name="closed" value="true" />
-      <created>1703077296888</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1703077296888</updated>
-    </task>
-    <task id="LOCAL-00014" summary="add SearchResult.tsx">
-      <option name="closed" value="true" />
-      <created>1703077319788</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1703077319788</updated>
-    </task>
-    <task id="LOCAL-00015" summary="add splashScreen.tsx">
-      <option name="closed" value="true" />
-      <created>1703078266691</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1703078266691</updated>
+      <workItem from="1705191653234" duration="33000" />
+      <workItem from="1705191693242" duration="311000" />
     </task>
     <task id="LOCAL-00016" summary="add .gitignore">
       <option name="closed" value="true" />
@@ -465,16 +441,45 @@
       <option name="project" value="LOCAL" />
       <updated>1705170852982</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="update Caroussel.tsx">
+      <option name="closed" value="true" />
+      <created>1705191678308</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1705191678308</updated>
+    </task>
+    <task id="LOCAL-00062" summary="update Pagination.tsx">
+      <option name="closed" value="true" />
+      <created>1705191763436</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1705191763436</updated>
+    </task>
+    <task id="LOCAL-00063" summary="add TextCollapse.tsx">
+      <option name="closed" value="true" />
+      <created>1705191867156</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1705191867156</updated>
+    </task>
+    <task id="LOCAL-00064" summary="add ColorVariant.tsx">
+      <option name="closed" value="true" />
+      <created>1705191975747</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1705191975747</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add _layout.tsx" />
-    <MESSAGE value="update package.json &amp; package-lock.json" />
-    <MESSAGE value="update login.tsx" />
     <MESSAGE value="update SearchResult.tsx &amp; SearchFilter.tsx" />
     <MESSAGE value="update FormInputGroup.tsx" />
     <MESSAGE value="update InputField.tsx" />
@@ -485,7 +490,6 @@
     <MESSAGE value="update signUp.tsx" />
     <MESSAGE value="update signIp.tsx" />
     <MESSAGE value="update myApi.ts" />
-    <MESSAGE value="update Pagination.tsx" />
     <MESSAGE value="add assets" />
     <MESSAGE value="add Caroussel.tsx" />
     <MESSAGE value="move notification.tsx" />
@@ -497,6 +501,10 @@
     <MESSAGE value="update _layout.tsx in (tabs)" />
     <MESSAGE value="update _layout.tsx" />
     <MESSAGE value="update index.tsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="update index.tsx" />
+    <MESSAGE value="update Caroussel.tsx" />
+    <MESSAGE value="update Pagination.tsx" />
+    <MESSAGE value="add TextCollapse.tsx" />
+    <MESSAGE value="add ColorVariant.tsx" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ColorVariant.tsx" />
   </component>
 </project>
