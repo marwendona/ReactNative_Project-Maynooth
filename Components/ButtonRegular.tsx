@@ -166,7 +166,9 @@ const ButtonRegular: React.FC<ButtonRegularProps> = ({
     default:
       radius = 12
   }
+  
   return (
+    <View>
         <TouchableOpacity
                           onPressIn={onPressIn}
                           onFocus={onHover}
@@ -194,6 +196,7 @@ const ButtonRegular: React.FC<ButtonRegularProps> = ({
                 <Icon iconName={iconRight} size={size.toString()} color={textColor}/>
             }
         </TouchableOpacity>
+        </View>
   )
 }
 export default ButtonRegular
