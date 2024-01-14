@@ -98,20 +98,25 @@ const BaseInputField: React.FC<BaseInputFieldProps> = ({ size, state, text, icon
 
   return (
 
-      <View style={{ ...SizeStyles.baseInputfield, ...StateStyles.baseInputfield }} >
-        {iconLeft && <Icon iconName={iconLeft} size={size} color={theme.colors.gray50} />}
-        <View style={{ ...SizeStyles.textwrapper, ...StateStyles.textwrapper }}>
-          <TextInput accessible={true} keyboardType='default' onSubmitEditing={Keyboard.dismiss} placeholder={text} style={{ ...SizeStyles.inputvalue, ...StateStyles.inputvalue }}  onChangeText={
-            newText=>{
-              setInputText(newText)
-              content(newText)
-            }}
-                     value={inputText}
-          >
-          </TextInput>
+        <View style={{ ...SizeStyles.baseInputfield, ...StateStyles.baseInputfield }} >
+            {iconLeft && <Icon iconName={iconLeft} size={size} color={theme.colors.gray50} />}
+            <View style={{ ...SizeStyles.textwrapper, ...StateStyles.textwrapper }}>
+                <TextInput accessible={true} 
+                keyboardType='default' 
+                onSubmitEditing={Keyboard.dismiss}
+                 placeholder={text}
+                  style={{ ...SizeStyles.inputvalue, ...StateStyles.inputvalue }}
+                    onChangeText={
+                  newText=>{
+                    setInputText(newText)
+                    content(newText)
+                }}
+                value={inputText}
+                >
+                </TextInput>
+            </View>
+            {iconRight && <Icon iconName={iconRight} size={size} color={theme.colors.gray100} />}
         </View>
-        {iconRight && <Icon iconName={iconRight} size={size} color={theme.colors.gray100} />}
-      </View>
   )
 }
 export default BaseInputField
