@@ -1,11 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, StyleSheet, Animated } from 'react-native';
 import { Svg, Path, Line, Circle } from 'react-native-svg';
 import Icon from '../../../Components/Icon';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import ButtonParameters from '../../../Components/ButtonParameters';
+import { router } from 'expo-router';
+import ButtonViewMoreVertical from '../../../Components/ButtonViewMoreDown';
+import Close from '../../../Components/Close';
+import ButtonTitleAction from '../../../Components/ButtonTitleAction';
 
 
 export default function SearchIndex() {
+    const [searchHistoryItems, setSearchHistoryItems] = useState([
+        "Search History Item 1",
+        "Search History Item 2",
+        "Search History Item 3",
+        "Search History Item 4",
+        "Search History Item 5",
+        "Search History Item 6",
+        "Search History Item 7",
+      ]);
+      const [numberToShow, setNumberToShow] = useState<number>(2);
+      const handleSearch = (query:string) =>{
+        router.push(`/search?search=${query}`)
+      }
+      const handleClearAll = () => {
+        setSearchHistoryItems([]);
+      };
+      const handleClearThis = (index: number) => {
+        const updatedSearchItems = [...searchHistoryItems];
+        updatedSearchItems.splice(index, 1);
+        setSearchHistoryItems(updatedSearchItems);
+      };
+      const [showMoreStatus, setShowMoreStatus] = useState<"up" | "down">("up");
+      const handleShowMore = () => {
+        if (showMoreStatus == "up") {
+          setShowMoreStatus("down");
+          setNumberToShow(searchHistoryItems.length);
+        } else {
+          setShowMoreStatus("up");
+          setNumberToShow(2);
+        }
+      };
     const scaleValue = new Animated.Value(1); 
 
     const handleIconPress = () => {
@@ -23,78 +59,35 @@ export default function SearchIndex() {
                     <Text style={styles._searchhistory}>
                         {`Search history`}
                     </Text>
+                    
                     <View style={styles.buttonviewmore}>
-                        <View style={styles.textwrapper}>
-                            <TouchableOpacity onPress={handleIconPress}>
-                                <Text style={styles.text}>
-                                    {`Clear all`}
-                                </Text>
+                        <View style={styles.titleSectionWrapper}>
+                            <ButtonTitleAction title="Clear all" action={handleClearAll} />
+                        </View>
+                    </View>
+                </View>
+                <View style={styles.searchHistoryWrapper}>
+                    {searchHistoryItems.map((item, index) => {
+                        if (index <= numberToShow)
+                        return (
+                            <TouchableOpacity key={index} onPress={()=>{handleSearch(item)}}>
+                            <ButtonParameters
+                                title={item}
+                                iconRight={<Close />}
+                                icon=""
+                                label=""
+                                action={() => handleClearThis(index)}
+                            />
                             </TouchableOpacity>
-                        </View>
-                    </View>
+                        );
+                    })}
+                    {searchHistoryItems.length > 3 && (
+                        <ButtonViewMoreVertical
+                        status={showMoreStatus}
+                        buttonOnclick={handleShowMore}
+                        />
+                    )}
                 </View>
-                <View style={styles.items}>
-                    <View style={styles.item}>
-                        <View style={styles._text}>
-                            <Text style={styles._title}>
-                                {`Sofa`}
-                            </Text>
-                        </View>
-                        <TouchableOpacity onPress={handleIconPress}>
-                            <Icon iconName={'close'} size={'Small'} />
-                        </TouchableOpacity>
-                    </View>
-                    <View style={styles._item}>
-                        <View style={styles.__text}>
-                            <Text style={styles.__title}>
-                                {`Bed`}
-                            </Text>
-                        </View>
-                        <TouchableOpacity onPress={handleIconPress}>
-                            <Icon iconName={'close'} size={'Small'} />
-                        </TouchableOpacity>
-                    </View>
-                    <View style={styles.__item}>
-                        <View style={styles.___text}>
-                            <Text style={styles.___title}>
-                                {`Pillow`}
-                            </Text>
-                        </View>
-                        <TouchableOpacity onPress={handleIconPress}>
-                            <Icon iconName={'close'} size={'Small'} />
-                        </TouchableOpacity>
-                    </View>
-                    <View style={styles.___item}>
-                        <View style={styles.____text}>
-                            <Text style={styles.____title}>
-                                {`Table`}
-                            </Text>
-                        </View>
-                        <TouchableOpacity onPress={handleIconPress}>
-                            <Icon iconName={'close'} size={'Small'} />
-                        </TouchableOpacity>
-                    </View>
-                    <View style={styles.____item}>
-                        <View style={styles._____text}>
-                            <Text style={styles._____title}>
-                                {`Lamp`}
-                            </Text>
-                        </View>
-                        <TouchableOpacity onPress={handleIconPress}>
-                            <Icon iconName={'close'} size={'Small'} />
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                <TouchableOpacity onPress={handleIconPress}>
-                    <View style={styles._buttonviewmore}>
-                        <View style={styles._textwrapper}>
-                            <Text style={styles.______text}>
-                                {`View more  `}
-                            </Text>
-                        </View>
-                        <Icon iconName={'expand_more'} size={'Small'} />
-                    </View>
-                </TouchableOpacity>
             </View>
             {/* Vigma RN:: can be replaced with <Divider type={"horizontal"} /> */}
             <View style={styles.divider}>
@@ -250,6 +243,9 @@ export default function SearchIndex() {
 }
 
 const styles = StyleSheet.create({
+    searchHistoryWrapper: {
+        marginBottom: 20,
+      },
     searchIndex: {
         flexShrink: 0,
         height: 800,
@@ -403,6 +399,11 @@ const styles = StyleSheet.create({
         paddingVertical: 0,
         paddingHorizontal: 24
     },
+    titleSectionWrapper: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginBottom: 15,
+      },
     _searchhistory: {
         flexGrow: 1,
         flexShrink: 1,

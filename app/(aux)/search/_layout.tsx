@@ -25,51 +25,51 @@ const CustomHeader = ({ }) => {
   };
   const navigation = useNavigation();
 
-  return (
-    <View style={styles.headerContainer}>
-      <TouchableOpacity onPress={() => { router.back() }}><Icon iconName='arrow_back' color={theme.colors.gray100} size='Small' /></TouchableOpacity>
-      <View style={styles.inputContainer}>
-        <InputField
-        size={BaseInputFieldSize.Small}
-        state={BaseInputFieldState.FocusFilled}
-        text='Search...'
-        iconLeft='search'
-        iconRight='close'
-      />
-        {searchText.length > 0 && (
-          <TouchableOpacity onPress={handleClearPress}>
-            <Icon iconName="clear" color={theme.colors.gray100} size="Small" />
-          </TouchableOpacity>
-        )}
-      </View>
-      <TouchableOpacity onPress={toggleModal}>
-        <Icon iconName="tune" color={theme.colors.gray100} size="Small" />
-      </TouchableOpacity>
+//   return (
+//     <View style={styles.headerContainer}>
+//       <TouchableOpacity onPress={() => { router.back() }}><Icon iconName='arrow_back' color={theme.colors.gray100} size='Small' /></TouchableOpacity>
+//       <View style={styles.inputContainer}>
+//         <InputField
+//         size={BaseInputFieldSize.Small}
+//         state={BaseInputFieldState.FocusFilled}
+//         text='Search...'
+//         iconLeft='search'
+//         iconRight='close'
+//       />
+//         {searchText.length > 0 && (
+//           <TouchableOpacity onPress={handleClearPress}>
+//             <Icon iconName="clear" color={theme.colors.gray100} size="Small" />
+//           </TouchableOpacity>
+//         )}
+//       </View>
+//       <TouchableOpacity onPress={toggleModal}>
+//         <Icon iconName="tune" color={theme.colors.gray100} size="Small" />
+//       </TouchableOpacity>
       
-      <SearchFilter isVisible={isModalVisible} onClose={() => {
-          toggleModal();          
-        }} />
-    </View>
-  );
-};
+//       <SearchFilter isVisible={isModalVisible} onClose={() => {
+//           toggleModal();          
+//         }} />
+//     </View>
+//   );
+ };
 
-const Layout = () => {
-  return (
-    <Stack.Navigator
-      screenOptions={{
-        header: ({ }) => <CustomHeader />,
-      }}
-    >
-      <Stack.Screen
-        name="SearchResult"
-        component={SearchIndex}
-        options={{ title: 'Search Result' }}
-      />
-    </Stack.Navigator>
-  );
-};
+// const Layout = () => {
+//   return (
+//     <Stack.Navigator
+//       screenOptions={{
+//         header: ({ }) => <CustomHeader />,
+//       }}
+//     >
+//       <Stack.Screen
+//         name="SearchResult"
+//         component={SearchIndex}
+//         options={{ title: 'Search Result' }}
+//       />
+//     </Stack.Navigator>
+//   );
+// };
 
-export default Layout;
+// export default Layout;
 
 const styles = StyleSheet.create({
   headerContainer: {
