@@ -1,6 +1,6 @@
-import { StyleSheet, View, Text } from 'react-native'
+import { StyleSheet, View, Text, Keyboard } from 'react-native'
 import Icon from './Icon'
-import React, { useState } from 'react'
+import React, { useEffect,useState} from 'react'
 import theme from "./theme";
 import {TextInput} from "react-native-gesture-handler";
 export interface BaseInputFieldProps {
@@ -32,6 +32,21 @@ export enum BaseInputFieldState {
 
 const BaseInputField: React.FC<BaseInputFieldProps> = ({ size, state, text, iconLeft, iconRight ,content}) => {
   const [inputText, setInputText] = useState('');
+  const [keyboardStatus, setKeyboardStatus] = useState('');
+
+  useEffect(() => {
+    const showSubscription = Keyboard.addListener('keyboardDidShow', () => {
+      setKeyboardStatus('Keyboard Shown');
+    });
+    const hideSubscription = Keyboard.addListener('keyboardDidHide', () => {
+      setKeyboardStatus('Keyboard Hidden');
+    });
+
+    return () => {
+      showSubscription.remove();
+      hideSubscription.remove();
+    };
+  }, []);
   let SizeStyles
   switch (size) {
     case BaseInputFieldSize.Small:
@@ -83,20 +98,20 @@ const BaseInputField: React.FC<BaseInputFieldProps> = ({ size, state, text, icon
 
   return (
 
-        <View style={{ ...SizeStyles.baseInputfield, ...StateStyles.baseInputfield }} >
-            {iconLeft && <Icon iconName={iconLeft} size={size} color={theme.colors.gray50} />}
-            <View style={{ ...SizeStyles.textwrapper, ...StateStyles.textwrapper }}>
-                <TextInput placeholder={text} style={{ ...SizeStyles.inputvalue, ...StateStyles.inputvalue }}  onChangeText={
-                  newText=>{
-                    setInputText(newText)
-                    content(newText)
-                }}
-                value={inputText}
-                >
-                </TextInput>
-            </View>
-            {iconRight && <Icon iconName={iconRight} size={size} color={theme.colors.gray100} />}
+      <View style={{ ...SizeStyles.baseInputfield, ...StateStyles.baseInputfield }} >
+        {iconLeft && <Icon iconName={iconLeft} size={size} color={theme.colors.gray50} />}
+        <View style={{ ...SizeStyles.textwrapper, ...StateStyles.textwrapper }}>
+          <TextInput accessible={true} keyboardType='default' onSubmitEditing={Keyboard.dismiss} placeholder={text} style={{ ...SizeStyles.inputvalue, ...StateStyles.inputvalue }}  onChangeText={
+            newText=>{
+              setInputText(newText)
+              content(newText)
+            }}
+                     value={inputText}
+          >
+          </TextInput>
         </View>
+        {iconRight && <Icon iconName={iconRight} size={size} color={theme.colors.gray100} />}
+      </View>
   )
 }
 export default BaseInputField
