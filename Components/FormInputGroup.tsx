@@ -21,6 +21,7 @@ const FormInputGroup: React.FC<FormInputGroupProps> = ({ labelPrimary = '', labe
         <View style={styles.formInputgroup}>
 
              <BaseLabel
+          
                 labelPrimary={labelPrimary}
                 labelRight={labelRight}
                 labelSecondary={labelSecondary}
@@ -29,8 +30,8 @@ const FormInputGroup: React.FC<FormInputGroupProps> = ({ labelPrimary = '', labe
                 color={BaseInputLabelColor.Dark}
             />
             <BaseInputField
-             size={BaseInputFieldSize.Small}
-             state={BaseInputFieldState.Default}
+             size={BaseInputFieldSize.Large}
+             state={BaseInputFieldState.Filled}
              iconLeft={iconLeftInner}
              iconRight={iconRightInner}
              text={value}
