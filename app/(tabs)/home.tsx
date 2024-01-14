@@ -68,13 +68,16 @@ const Home = () => {
             {products.map &&
                 products.map((product, index: number) => (
                     <View style={styles.fullImageCardWrapper} key={index}>
-                      <Card2
-                          key={product.id}
-                          title={product.title}
-                          subtitle={product.description}
-                          orientation={CardOrientation.Horizontal}
-                          image={product.image}
-                      />
+                      <TouchableOpacity style={{ marginRight: 12, marginLeft: 12 }} key={index} onPress={() => { redirectProductById(product) }}>
+
+                        <Card2
+                            key={product.id}
+                            title={product.title}
+                            subtitle={product.description}
+                            orientation={CardOrientation.Horizontal}
+                            image={product.image}
+                        />
+                      </TouchableOpacity>
                     </View>
                 ))}
           </ScrollView>
@@ -85,13 +88,15 @@ const Home = () => {
             {products.map &&
                 products.map((product, index: number) => (
                     <View style={styles.fullImageCardWrapper} key={index}>
-                      <Card2
-                          key={product.id}
-                          title={product.title}
-                          subtitle={product.description}
-                          orientation={CardOrientation.Horizontal}
-                          image={product.image}
-                      />
+                      <TouchableOpacity style={{ marginRight: 12, marginLeft: 12 }} key={index} onPress={() => { redirectProductById(product) }}>
+                        <Card2
+                            key={product.id}
+                            title={product.title}
+                            subtitle={product.description}
+                            orientation={CardOrientation.Horizontal}
+                            image={product.image}
+                        />
+                      </TouchableOpacity>
                     </View>
                 ))}
           </ScrollView>
@@ -104,20 +109,22 @@ const Home = () => {
             {products.map((product, index: number) => (
                 <View key={index} style={styles.columnWrapper}>
                   <View key={product.id} style={styles.productCardWrapper}>
-                    <Card1
-                        key={product.id}
-                        title={product.title}
-                        subtitle={product.description}
-                        type={'Product'}
-                        initialPrice={product.price}
-                        discount={
-                            Math.round(((product.promotion-product.price)/product.price)*100) + '%'
-                        }
-                        newPrice={product.promotion}
-                        image={product.image}
-                        orientation='Vertical'
-                        rating='5.0'
-                    />
+                    <TouchableOpacity style={{ marginRight: 12, marginLeft: 12 }} key={index} onPress={() => { redirectProductById(product) }}>
+                      <Card1
+                          key={product.id}
+                          title={product.title}
+                          subtitle={product.description}
+                          type={'Product'}
+                          initialPrice={product.price}
+                          discount={
+                              Math.round(((product.promotion-product.price)/product.price)*100) + '%'
+                          }
+                          newPrice={product.promotion}
+                          image={product.image}
+                          orientation='Vertical'
+                          rating='5.0'
+                      />
+                    </TouchableOpacity>
                   </View>
                 </View>
             ))}
