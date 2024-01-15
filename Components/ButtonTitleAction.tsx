@@ -29,7 +29,7 @@ const ButtonTitleAction: React.FC<ButtonTitleActionProps> = ({
       <TouchableOpacity onPress={action}>
         <View style={styles.buttonlogout}>
           <View style={styles.iconleft}>
-            <Icon iconName="logout" color={theme.colors.gray100} size="Medium"></Icon>
+            {/* <Icon iconName="logout" color={theme.colors.gray100} size="Medium"></Icon> */}
           </View>
           <View style={styles.textwrapper}>
             <Text style={styles.text}>
