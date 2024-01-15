@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update index.tsx" />
+    <list default="true" id="05f2d543-ba5b-4f5f-8978-4ed8de8b1f3f" name="Changes" comment="update index.tsx">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,28 +23,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth/Components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\MSI\\Documents\\IIT\\3GLID\\CrossPlateformeReactNative(AminaAbdelkafi)\\Projects\\Project-Maynooth\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/MSI/Documents/IIT/3GLID/CrossPlateformeReactNative(AminaAbdelkafi)/Projects/Project-Maynooth&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\MSI\\Documents\\IIT\\3GLID\\CrossPlateformeReactNative(AminaAbdelkafi)\\Projects\\Project-Maynooth\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\Components" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(aux)" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app\(tabs)" />
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\assets" />
-      <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MSI\Documents\IIT\3GLID\CrossPlateformeReactNative(AminaAbdelkafi)\Projects\Project-Maynooth\store\reducers" />
@@ -74,254 +76,8 @@
       <workItem from="1705169907006" duration="953000" />
       <workItem from="1705191653234" duration="33000" />
       <workItem from="1705191693242" duration="811000" />
-    </task>
-    <task id="LOCAL-00025" summary="update SearchList.tsx">
-      <option name="closed" value="true" />
-      <created>1703553656246</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1703553656246</updated>
-    </task>
-    <task id="LOCAL-00026" summary="update SearchResult.tsx">
-      <option name="closed" value="true" />
-      <created>1703553672447</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1703553672447</updated>
-    </task>
-    <task id="LOCAL-00027" summary="update _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1703553700783</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1703553700783</updated>
-    </task>
-    <task id="LOCAL-00028" summary="update login.tsx">
-      <option name="closed" value="true" />
-      <created>1703553719717</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1703553719717</updated>
-    </task>
-    <task id="LOCAL-00029" summary="update _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1703553728894</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1703553728894</updated>
-    </task>
-    <task id="LOCAL-00030" summary="add _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1703553741745</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1703553741745</updated>
-    </task>
-    <task id="LOCAL-00031" summary="update package.json &amp; package-lock.json">
-      <option name="closed" value="true" />
-      <created>1704213627120</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1704213627120</updated>
-    </task>
-    <task id="LOCAL-00032" summary="update login.tsx">
-      <option name="closed" value="true" />
-      <created>1704213639998</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1704213639998</updated>
-    </task>
-    <task id="LOCAL-00033" summary="update SearchResult.tsx &amp; SearchFilter.tsx">
-      <option name="closed" value="true" />
-      <created>1704213733863</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1704213733863</updated>
-    </task>
-    <task id="LOCAL-00034" summary="update FormInputGroup.tsx">
-      <option name="closed" value="true" />
-      <created>1704589006131</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589006131</updated>
-    </task>
-    <task id="LOCAL-00035" summary="update InputField.tsx">
-      <option name="closed" value="true" />
-      <created>1704589157631</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589157631</updated>
-    </task>
-    <task id="LOCAL-00036" summary="update NavItem.tsx">
-      <option name="closed" value="true" />
-      <created>1704589210489</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589210489</updated>
-    </task>
-    <task id="LOCAL-00037" summary="add cart.tsx">
-      <option name="closed" value="true" />
-      <created>1704589403072</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589403072</updated>
-    </task>
-    <task id="LOCAL-00038" summary="add search.tsx">
-      <option name="closed" value="true" />
-      <created>1704589419007</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589419007</updated>
-    </task>
-    <task id="LOCAL-00039" summary="add favorite.tsx">
-      <option name="closed" value="true" />
-      <created>1704589431483</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589431483</updated>
-    </task>
-    <task id="LOCAL-00040" summary="update home.tsx">
-      <option name="closed" value="true" />
-      <created>1704589446722</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589446722</updated>
-    </task>
-    <task id="LOCAL-00041" summary="update _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1704589457624</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589457624</updated>
-    </task>
-    <task id="LOCAL-00042" summary="update signUp.tsx">
-      <option name="closed" value="true" />
-      <created>1704589660239</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589660239</updated>
-    </task>
-    <task id="LOCAL-00043" summary="update signIp.tsx">
-      <option name="closed" value="true" />
-      <created>1704589673037</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589673037</updated>
-    </task>
-    <task id="LOCAL-00044" summary="update _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1704589681459</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589681459</updated>
-    </task>
-    <task id="LOCAL-00045" summary="update myApi.ts">
-      <option name="closed" value="true" />
-      <created>1704589738541</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589738541</updated>
-    </task>
-    <task id="LOCAL-00046" summary="update _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1704589794142</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1704589794142</updated>
-    </task>
-    <task id="LOCAL-00047" summary="update Pagination.tsx">
-      <option name="closed" value="true" />
-      <created>1704590088263</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1704590088263</updated>
-    </task>
-    <task id="LOCAL-00048" summary="add assets">
-      <option name="closed" value="true" />
-      <created>1704590113171</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1704590113171</updated>
-    </task>
-    <task id="LOCAL-00049" summary="add Caroussel.tsx">
-      <option name="closed" value="true" />
-      <created>1704590138253</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1704590138253</updated>
-    </task>
-    <task id="LOCAL-00050" summary="move notification.tsx">
-      <option name="closed" value="true" />
-      <created>1704634133446</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1704634133446</updated>
-    </task>
-    <task id="LOCAL-00051" summary="delete test.tsx">
-      <option name="closed" value="true" />
-      <created>1704634146026</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1704634146026</updated>
-    </task>
-    <task id="LOCAL-00052" summary="update home.tsx">
-      <option name="closed" value="true" />
-      <created>1704634167221</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1704634167221</updated>
-    </task>
-    <task id="LOCAL-00053" summary="update _layout.tsx">
-      <option name="closed" value="true" />
-      <created>1704634258150</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1704634258150</updated>
-    </task>
-    <task id="LOCAL-00054" summary="add notification.ts">
-      <option name="closed" value="true" />
-      <created>1704644137365</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1704644137365</updated>
-    </task>
-    <task id="LOCAL-00055" summary="update">
-      <option name="closed" value="true" />
-      <created>1704646390112</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1704646390112</updated>
+      <workItem from="1705271418280" duration="1094000" />
+      <workItem from="1705343727074" duration="4000" />
     </task>
     <task id="LOCAL-00056" summary="update SearchResult.tsx">
       <option name="closed" value="true" />
@@ -467,36 +223,284 @@
       <option name="project" value="LOCAL" />
       <updated>1705192494019</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="update ButtonRegular.tsx">
+      <option name="closed" value="true" />
+      <created>1705271755817</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271755817</updated>
+    </task>
+    <task id="LOCAL-00075" summary="update Card1.tsx">
+      <option name="closed" value="true" />
+      <created>1705271769230</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271769230</updated>
+    </task>
+    <task id="LOCAL-00076" summary="update Caroussel.tsx">
+      <option name="closed" value="true" />
+      <created>1705271780685</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271780685</updated>
+    </task>
+    <task id="LOCAL-00077" summary="update Divider.tsx">
+      <option name="closed" value="true" />
+      <created>1705271792710</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271792710</updated>
+    </task>
+    <task id="LOCAL-00078" summary="update FormInputGroup.tsx">
+      <option name="closed" value="true" />
+      <created>1705271804297</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271804297</updated>
+    </task>
+    <task id="LOCAL-00079" summary="update InputField.tsx">
+      <option name="closed" value="true" />
+      <created>1705271822268</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271822268</updated>
+    </task>
+    <task id="LOCAL-00080" summary="update Pagination.tsx">
+      <option name="closed" value="true" />
+      <created>1705271838937</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271838937</updated>
+    </task>
+    <task id="LOCAL-00081" summary="update Notification.tsx">
+      <option name="closed" value="true" />
+      <created>1705271860474</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271860474</updated>
+    </task>
+    <task id="LOCAL-00082" summary="add ArrowBack.tsx">
+      <option name="closed" value="true" />
+      <created>1705271877051</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271877051</updated>
+    </task>
+    <task id="LOCAL-00083" summary="add ArrowRight.tsx">
+      <option name="closed" value="true" />
+      <created>1705271885788</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271885788</updated>
+    </task>
+    <task id="LOCAL-00084" summary="add ButtonParameters.tsx">
+      <option name="closed" value="true" />
+      <created>1705271899200</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271899200</updated>
+    </task>
+    <task id="LOCAL-00085" summary="add ButtonTag.tsx">
+      <option name="closed" value="true" />
+      <created>1705271907502</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271907502</updated>
+    </task>
+    <task id="LOCAL-00086" summary="add ButtonTitleAction.tsx">
+      <option name="closed" value="true" />
+      <created>1705271917359</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271917359</updated>
+    </task>
+    <task id="LOCAL-00087" summary="add Close.tsx">
+      <option name="closed" value="true" />
+      <created>1705271927973</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271927973</updated>
+    </task>
+    <task id="LOCAL-00088" summary="add DividerPlus.tsx">
+      <option name="closed" value="true" />
+      <created>1705271939414</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271939414</updated>
+    </task>
+    <task id="LOCAL-00089" summary="add InputComponent.tsx">
+      <option name="closed" value="true" />
+      <created>1705271951401</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271951401</updated>
+    </task>
+    <task id="LOCAL-00090" summary="add NavTopSearch.tsx">
+      <option name="closed" value="true" />
+      <created>1705271966610</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271966610</updated>
+    </task>
+    <task id="LOCAL-00091" summary="add SearchGray.tsx">
+      <option name="closed" value="true" />
+      <created>1705271980289</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1705271980289</updated>
+    </task>
+    <task id="LOCAL-00092" summary="add user.ts to store">
+      <option name="closed" value="true" />
+      <created>1705272058768</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272058768</updated>
+    </task>
+    <task id="LOCAL-00093" summary="update index.ts in store">
+      <option name="closed" value="true" />
+      <created>1705272109676</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272109676</updated>
+    </task>
+    <task id="LOCAL-00094" summary="delete notification.ts in store">
+      <option name="closed" value="true" />
+      <created>1705272128931</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272128931</updated>
+    </task>
+    <task id="LOCAL-00095" summary="update page SearchResult">
+      <option name="closed" value="true" />
+      <created>1705272215220</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272215220</updated>
+    </task>
+    <task id="LOCAL-00096" summary="update page SearchIndex">
+      <option name="closed" value="true" />
+      <created>1705272237680</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272237680</updated>
+    </task>
+    <task id="LOCAL-00097" summary="update [product].tsx">
+      <option name="closed" value="true" />
+      <created>1705272280273</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272280273</updated>
+    </task>
+    <task id="LOCAL-00098" summary="update page home">
+      <option name="closed" value="true" />
+      <created>1705272326604</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272326604</updated>
+    </task>
+    <task id="LOCAL-00099" summary="update page search">
+      <option name="closed" value="true" />
+      <created>1705272351303</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272351303</updated>
+    </task>
+    <task id="LOCAL-00100" summary="update page notification">
+      <option name="closed" value="true" />
+      <created>1705272385418</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272385418</updated>
+    </task>
+    <task id="LOCAL-00101" summary="update page profile">
+      <option name="closed" value="true" />
+      <created>1705272443147</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272443147</updated>
+    </task>
+    <task id="LOCAL-00102" summary="update page signUp.tsx">
+      <option name="closed" value="true" />
+      <created>1705272464524</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272464524</updated>
+    </task>
+    <task id="LOCAL-00103" summary="update _layout.tsx">
+      <option name="closed" value="true" />
+      <created>1705272485233</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272485233</updated>
+    </task>
+    <task id="LOCAL-00104" summary="update index.tsx">
+      <option name="closed" value="true" />
+      <created>1705272500768</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1705272500768</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add favorite.tsx" />
-    <MESSAGE value="update signUp.tsx" />
-    <MESSAGE value="update signIp.tsx" />
-    <MESSAGE value="update myApi.ts" />
-    <MESSAGE value="add assets" />
-    <MESSAGE value="add Caroussel.tsx" />
-    <MESSAGE value="move notification.tsx" />
-    <MESSAGE value="delete test.tsx" />
-    <MESSAGE value="add notification.ts" />
-    <MESSAGE value="update" />
-    <MESSAGE value="update SearchResult.tsx" />
-    <MESSAGE value="update _layout.tsx in (tabs)" />
-    <MESSAGE value="update Caroussel.tsx" />
     <MESSAGE value="update Pagination.tsx" />
-    <MESSAGE value="add TextCollapse.tsx" />
-    <MESSAGE value="add ColorVariant.tsx" />
-    <MESSAGE value="add VerticalDivider.tsx" />
-    <MESSAGE value="add ProductCarousel.tsx" />
-    <MESSAGE value="add ProductReview.tsx" />
-    <MESSAGE value="delete counter.tsx" />
-    <MESSAGE value="update InputField.tsx" />
+    <MESSAGE value="update Notification.tsx" />
+    <MESSAGE value="add ArrowBack.tsx" />
+    <MESSAGE value="add ArrowRight.tsx" />
+    <MESSAGE value="add ButtonParameters.tsx" />
+    <MESSAGE value="add ButtonTag.tsx" />
+    <MESSAGE value="add ButtonTitleAction.tsx" />
+    <MESSAGE value="add Close.tsx" />
+    <MESSAGE value="add DividerPlus.tsx" />
+    <MESSAGE value="add InputComponent.tsx" />
+    <MESSAGE value="add NavTopSearch.tsx" />
+    <MESSAGE value="add SearchGray.tsx" />
+    <MESSAGE value="add user.ts to store" />
+    <MESSAGE value="update index.ts in store" />
+    <MESSAGE value="delete notification.ts in store" />
+    <MESSAGE value="update page SearchResult" />
+    <MESSAGE value="update page SearchIndex" />
     <MESSAGE value="update [product].tsx" />
-    <MESSAGE value="update home.tsx" />
+    <MESSAGE value="update page home" />
+    <MESSAGE value="update page search" />
+    <MESSAGE value="update page notification" />
+    <MESSAGE value="update page profile" />
+    <MESSAGE value="update page signUp.tsx" />
     <MESSAGE value="update _layout.tsx" />
     <MESSAGE value="update index.tsx" />
     <option name="LAST_COMMIT_MESSAGE" value="update index.tsx" />

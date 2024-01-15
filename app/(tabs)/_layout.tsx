@@ -48,26 +48,8 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="search"
         options={{
-          headerLeft: () => (
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
-              
-              <Image
-                source={require("../../assets/logo.png")}
-                style={{ marginRight: 8 }}
-              />
-              <Image source={require("../../assets/MAYNOOTH.png")} />
-            </View>
-          ),
           title:"",
-          headerRight: () => (
-            <View><TouchableOpacity
-              onPress={() => {
-                router.push({ pathname: "(aux)/notification" });
-              }}
-            >
-              <Ionicons name="notifications-outline" size={24} color="black" />
-            </TouchableOpacity></View>
-          ),
+          headerShown:false,
           tabBarIcon: ({ focused, color, size }) => {
             // You can return any component that you like here!
             return <NavItem icon="search" text="Search" active={routeActive === "/search"}/>
