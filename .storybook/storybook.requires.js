@@ -48,6 +48,7 @@ try {
 
 const getStories = () => {
     return {
+        './.storybook/stories/CardStyle2/CardStyle2.stories.tsx': require('./stories/CardStyle2/CardStyle2.stories.tsx'),
          './.storybook/stories/Card2/Card2.stories.tsx': require('./stories/Card2/Card2.stories.tsx'),
         // './.storybook/stories/InputField/InputField.stories.tsx': require('./stories/InputField/InputField.stories.tsx'),
          './.storybook/stories/LogoMark/LogoMark.stories.tsx': require('./stories/LogoMark/LogoMark.stories.tsx'),
