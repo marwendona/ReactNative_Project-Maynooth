@@ -16,7 +16,7 @@ const Index = () => {
   const verifToken = async () => {
     const value = await AsyncStorage.getItem('token')
     console.log(value);
-    
+
     if (value) {
       setToken(JSON.parse(value).token)
       service.setSecurityData({
@@ -38,11 +38,11 @@ const Index = () => {
   useEffect(() => {
     console.log('init token');
     console.log(!isLoading,!token);
-    
+
     if (!isLoading) {
       router.push('/auth/signIn')
       console.log(token);
-      
+
     }
 
   }, [token])
@@ -53,7 +53,7 @@ const Index = () => {
     return (
       <Provider store={store}>
         <Slot></Slot>
-        <Redirect href="/auth/signIn"/>
+        <Redirect href="/OnBoardingScreens"/>
 
       </Provider>
     )
